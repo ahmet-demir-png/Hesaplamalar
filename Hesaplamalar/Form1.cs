@@ -66,10 +66,13 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = true;
             panel_toplama.Visible = false;
         }
-        public void hesapla()
+
+        // Hesaplama ve sonuç iþlemler
+        public void hesapla()   
         {
             sayi1 = Convert.ToDouble(maskedTextBox_Sayi1.Text);
             sayi2 = Convert.ToDouble(maskedTextBox_Sayi2.Text);
+
             if (radioButton_surekiislem.Checked == true)
             {
                 if (sureklisilemkontrol == true)
@@ -178,34 +181,27 @@ namespace Hesaplamalar
                 hesapla();
             }
         }
+
+        //MaskedTextBoclarýn olduðu bölge
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-            (e.KeyChar != ','))
-            {
-                e.Handled = true;
-            }
 
-            // only allow one decimal point
-            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
-            {
-                e.Handled = true;
-            }
-            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
-            {
-                e.Handled = true;
-            }
         }
         private void maskedTextBox_Sayi2_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
         }
+
+        //Butonlarýn iþlemleri
         private void button_temizle_Click(object sender, EventArgs e)
         {
             listBox_dahaoncekiislemler.Items.Clear();
         }
         private void button_CE_sil_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button_number_c_sil_Click(object sender, EventArgs e)
         {
             maskedTextBox_Sayi1.Text = "";
             maskedTextBox_Sayi2.Text = "";
@@ -214,6 +210,8 @@ namespace Hesaplamalar
             sayi2 = 0;
             toplam = 0;
         }
+
+        //Radio Butonlarýnýn oldðu kýsým
         private void radioButton_surekiislem_CheckedChanged(object sender, EventArgs e)
         {
             if(sureklisilemkontrol == false)
