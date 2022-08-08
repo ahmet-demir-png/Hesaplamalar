@@ -96,9 +96,9 @@
             this.panel_toplama.Controls.Add(this.label_sembol);
             this.panel_toplama.Controls.Add(this.maskedTextBox_Sayi2);
             this.panel_toplama.Controls.Add(this.maskedTextBox_Sayi1);
-            this.panel_toplama.Location = new System.Drawing.Point(448, 252);
+            this.panel_toplama.Location = new System.Drawing.Point(271, 178);
             this.panel_toplama.Name = "panel_toplama";
-            this.panel_toplama.Size = new System.Drawing.Size(505, 154);
+            this.panel_toplama.Size = new System.Drawing.Size(799, 231);
             this.panel_toplama.TabIndex = 2;
             // 
             // button_topla_sonuc
@@ -106,7 +106,7 @@
             this.button_topla_sonuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_topla_sonuc.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_topla_sonuc.ForeColor = System.Drawing.Color.White;
-            this.button_topla_sonuc.Location = new System.Drawing.Point(455, 45);
+            this.button_topla_sonuc.Location = new System.Drawing.Point(749, 94);
             this.button_topla_sonuc.Name = "button_topla_sonuc";
             this.button_topla_sonuc.Size = new System.Drawing.Size(50, 50);
             this.button_topla_sonuc.TabIndex = 7;
@@ -118,7 +118,7 @@
             // 
             this.button_CE_sil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_CE_sil.ForeColor = System.Drawing.Color.IndianRed;
-            this.button_CE_sil.Location = new System.Drawing.Point(455, 101);
+            this.button_CE_sil.Location = new System.Drawing.Point(749, 150);
             this.button_CE_sil.Name = "button_CE_sil";
             this.button_CE_sil.Size = new System.Drawing.Size(50, 50);
             this.button_CE_sil.TabIndex = 6;
@@ -162,9 +162,8 @@
             // label_sembol
             // 
             this.label_sembol.AutoSize = true;
-            this.label_sembol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_sembol.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_sembol.Location = new System.Drawing.Point(237, 0);
+            this.label_sembol.Location = new System.Drawing.Point(384, 7);
             this.label_sembol.Name = "label_sembol";
             this.label_sembol.Size = new System.Drawing.Size(31, 32);
             this.label_sembol.TabIndex = 2;
@@ -179,10 +178,10 @@
             this.maskedTextBox_Sayi2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.maskedTextBox_Sayi2.ForeColor = System.Drawing.Color.White;
             this.maskedTextBox_Sayi2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskedTextBox_Sayi2.Location = new System.Drawing.Point(268, 0);
+            this.maskedTextBox_Sayi2.Location = new System.Drawing.Point(430, 0);
             this.maskedTextBox_Sayi2.Name = "maskedTextBox_Sayi2";
             this.maskedTextBox_Sayi2.PromptChar = ' ';
-            this.maskedTextBox_Sayi2.Size = new System.Drawing.Size(237, 39);
+            this.maskedTextBox_Sayi2.Size = new System.Drawing.Size(369, 39);
             this.maskedTextBox_Sayi2.TabIndex = 1;
             this.maskedTextBox_Sayi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.maskedTextBox_Sayi2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maskedTextBox_Sayi2_KeyDown);
@@ -199,7 +198,7 @@
             this.maskedTextBox_Sayi1.Location = new System.Drawing.Point(0, 0);
             this.maskedTextBox_Sayi1.Name = "maskedTextBox_Sayi1";
             this.maskedTextBox_Sayi1.PromptChar = ' ';
-            this.maskedTextBox_Sayi1.Size = new System.Drawing.Size(237, 39);
+            this.maskedTextBox_Sayi1.Size = new System.Drawing.Size(369, 39);
             this.maskedTextBox_Sayi1.TabIndex = 0;
             this.maskedTextBox_Sayi1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.maskedTextBox_Sayi1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_Sayi1_KeyPress);

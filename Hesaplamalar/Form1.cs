@@ -150,6 +150,7 @@ namespace Hesaplamalar
                     sureklisilemkontrol = true;
                 }
             }
+            listBox_Listececmisi.Items.Add(sayi1 + label_sembol.Text + toplam);
             listBox_dahaoncekiislemler.Items.Add(sayi1 + label_sembol.Text + toplam);
         }
         private void maskedTextBox_Sayi2_KeyDown(object sender, KeyEventArgs e)
@@ -179,7 +180,22 @@ namespace Hesaplamalar
         }
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
+            // e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
+            }
         }
         private void maskedTextBox_Sayi2_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -198,7 +214,6 @@ namespace Hesaplamalar
             sayi2 = 0;
             toplam = 0;
         }
-
         private void radioButton_surekiislem_CheckedChanged(object sender, EventArgs e)
         {
             if(sureklisilemkontrol == false)
@@ -214,7 +229,6 @@ namespace Hesaplamalar
             }
 
         }
-
         private void radioButton_tekislem_CheckedChanged(object sender, EventArgs e)
         {
             maskedTextBox_Sayi1.Enabled = true;
