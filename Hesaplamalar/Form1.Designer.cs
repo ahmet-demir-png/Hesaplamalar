@@ -145,6 +145,7 @@
             this.radioButton_tekislem.TabStop = true;
             this.radioButton_tekislem.Text = "Tek işlem";
             this.radioButton_tekislem.UseVisualStyleBackColor = true;
+            this.radioButton_tekislem.CheckedChanged += new System.EventHandler(this.radioButton_tekislem_CheckedChanged);
             // 
             // radioButton_surekiislem
             // 
@@ -156,6 +157,7 @@
             this.radioButton_surekiislem.TabStop = true;
             this.radioButton_surekiislem.Text = "Sürekli işlem";
             this.radioButton_surekiislem.UseVisualStyleBackColor = true;
+            this.radioButton_surekiislem.CheckedChanged += new System.EventHandler(this.radioButton_surekiislem_CheckedChanged);
             // 
             // label_sembol
             // 

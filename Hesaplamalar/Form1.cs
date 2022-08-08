@@ -13,7 +13,6 @@ namespace Hesaplamalar
         {
             InitializeComponent();
         }
-
         private void anasayfa_Load(object sender, EventArgs e)
         {
             radioButton_surekiislem.Checked = true;
@@ -21,7 +20,6 @@ namespace Hesaplamalar
             maskedTextBox_Sayi1.Text = "";
             maskedTextBox_Sayi2.Text = "";
         }
-
         private void button_Toplama_Click(object sender, EventArgs e)
         {
             label_sembol.Text = "+";
@@ -30,7 +28,6 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
         }
-
         private void button_Cikarma_Click(object sender, EventArgs e)
         {
             label_sembol.Text = "-";
@@ -39,7 +36,6 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
         }
-
         private void button2_Bolme_Click(object sender, EventArgs e)
         {
             label_sembol.Text = "÷";
@@ -48,7 +44,6 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
         }
-
         private void button_Carpma_Click(object sender, EventArgs e)
         {
             label_sembol.Text = "x";
@@ -57,7 +52,6 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
         }
-
         private void button_Daha_onceki_islemler_Click(object sender, EventArgs e)
         {
             durum = 5;
@@ -65,7 +59,6 @@ namespace Hesaplamalar
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = false;
         }
-
         private void button_Liste_gecmisi_Click(object sender, EventArgs e)
         {
             durum = 6;
@@ -159,16 +152,15 @@ namespace Hesaplamalar
             }
             listBox_dahaoncekiislemler.Items.Add(sayi1 + label_sembol.Text + toplam);
         }
-
         private void maskedTextBox_Sayi2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (string.IsNullOrEmpty(maskedTextBox_Sayi2.Text) || string.IsNullOrEmpty(maskedTextBox_Sayi1.Text))
+            if (e.KeyCode == Keys.Enter)
             {
-                MessageBox.Show("Boþ bakamazsýnýz");
-            }
-            else
-            {
-                if (e.KeyCode == Keys.Enter)
+                if (string.IsNullOrEmpty(maskedTextBox_Sayi2.Text) || string.IsNullOrEmpty(maskedTextBox_Sayi1.Text))
+                {
+                    MessageBox.Show("Boþ bakamazsýnýz");
+                }
+                else
                 {
                     hesapla();
                 }
@@ -185,22 +177,18 @@ namespace Hesaplamalar
                 hesapla();
             }
         }
-
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
         }
-
         private void maskedTextBox_Sayi2_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',' && e.KeyChar != '-';
         }
-
         private void button_temizle_Click(object sender, EventArgs e)
         {
             listBox_dahaoncekiislemler.Items.Clear();
         }
-
         private void button_CE_sil_Click(object sender, EventArgs e)
         {
             maskedTextBox_Sayi1.Text = "";
@@ -209,6 +197,16 @@ namespace Hesaplamalar
             sayi1 = 0;
             sayi2 = 0;
             toplam = 0;
+        }
+
+        private void radioButton_surekiislem_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBox_Sayi1.Enabled = false;
+        }
+
+        private void radioButton_tekislem_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBox_Sayi1.Enabled = Enabled;
         }
     }
 }
