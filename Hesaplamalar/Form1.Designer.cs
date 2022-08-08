@@ -138,6 +138,7 @@
             // radioButton_tekislem
             // 
             this.radioButton_tekislem.AutoSize = true;
+            this.radioButton_tekislem.Checked = true;
             this.radioButton_tekislem.Location = new System.Drawing.Point(148, 119);
             this.radioButton_tekislem.Name = "radioButton_tekislem";
             this.radioButton_tekislem.Size = new System.Drawing.Size(99, 25);
@@ -154,7 +155,6 @@
             this.radioButton_surekiislem.Name = "radioButton_surekiislem";
             this.radioButton_surekiislem.Size = new System.Drawing.Size(126, 25);
             this.radioButton_surekiislem.TabIndex = 3;
-            this.radioButton_surekiislem.TabStop = true;
             this.radioButton_surekiislem.Text = "Sürekli işlem";
             this.radioButton_surekiislem.UseVisualStyleBackColor = true;
             this.radioButton_surekiislem.CheckedChanged += new System.EventHandler(this.radioButton_surekiislem_CheckedChanged);

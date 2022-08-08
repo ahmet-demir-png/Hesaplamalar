@@ -15,8 +15,8 @@ namespace Hesaplamalar
         }
         private void anasayfa_Load(object sender, EventArgs e)
         {
-            radioButton_surekiislem.Checked = true;
-            radioButton_tekislem.Checked = false;
+            radioButton_surekiislem.Checked = false;
+            radioButton_tekislem.Checked = true;
             maskedTextBox_Sayi1.Text = "";
             maskedTextBox_Sayi2.Text = "";
         }
@@ -201,12 +201,23 @@ namespace Hesaplamalar
 
         private void radioButton_surekiislem_CheckedChanged(object sender, EventArgs e)
         {
-            maskedTextBox_Sayi1.Enabled = false;
+            if(sureklisilemkontrol == false)
+            {
+                MessageBox.Show("Önce Tekil iþlem yapmanýz gerekiyor. Ön iþlem yapýlmamýþtýr.");
+                radioButton_tekislem.Checked = true;
+                //return;
+            }
+            if (sureklisilemkontrol == true)
+            {
+                maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
+                maskedTextBox_Sayi1.Enabled = false;
+            }
+
         }
 
         private void radioButton_tekislem_CheckedChanged(object sender, EventArgs e)
         {
-            maskedTextBox_Sayi1.Enabled = Enabled;
+            maskedTextBox_Sayi1.Enabled = true;
         }
     }
 }
