@@ -162,14 +162,28 @@ namespace Hesaplamalar
 
         private void maskedTextBox_Sayi2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (string.IsNullOrEmpty(maskedTextBox_Sayi2.Text) || string.IsNullOrEmpty(maskedTextBox_Sayi1.Text))
             {
-                hesapla();
+                MessageBox.Show("Boþ bakamazsýnýz");
+            }
+            else
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    hesapla();
+                }
             }
         }
         private void button_topla_sonuc_Click(object sender, EventArgs e)
         {
-            hesapla();
+            if (string.IsNullOrEmpty(maskedTextBox_Sayi2.Text) || string.IsNullOrEmpty(maskedTextBox_Sayi1.Text))
+            {
+                MessageBox.Show("Boþ bakamazsýnýz");
+            }
+            else
+            {
+                hesapla();
+            }
         }
 
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
