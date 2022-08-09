@@ -63,6 +63,96 @@ namespace Hesaplamalar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bolme_islemi {
+            get {
+                object obj = ResourceManager.GetObject("Bolme-islemi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c_hesapmakinesi {
+            get {
+                object obj = ResourceManager.GetObject("c-hesapmakinesi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAM_parti {
+            get {
+                object obj = ResourceManager.GetObject("CAM-parti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carpma_isareti {
+            get {
+                object obj = ResourceManager.GetObject("carpma-isareti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CE_hesapmakinesi {
+            get {
+                object obj = ResourceManager.GetObject("CE-hesapmakinesi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap daha_onceki_islemler {
+            get {
+                object obj = ResourceManager.GetObject("daha-onceki-islemler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap daha_onceki_islemler1 {
+            get {
+                object obj = ResourceManager.GetObject("daha-onceki-islemler1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eksi_isareti {
+            get {
+                object obj = ResourceManager.GetObject("Eksi-isareti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap esittir_isareti {
+            get {
+                object obj = ResourceManager.GetObject("esittir-isareti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hakkimizda {
             get {
                 object obj = ResourceManager.GetObject("hakkimizda", resourceCulture);
@@ -76,6 +166,16 @@ namespace Hesaplamalar.Properties {
         internal static System.Drawing.Bitmap Hesapmakinesi {
             get {
                 object obj = ResourceManager.GetObject("Hesapmakinesi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Toplama_isareti {
+            get {
+                object obj = ResourceManager.GetObject("Toplama-isareti", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

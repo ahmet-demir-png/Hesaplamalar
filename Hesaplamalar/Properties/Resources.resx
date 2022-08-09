@@ -118,10 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="hakkimizda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hakkimizda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Eksi-isareti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eksi-isareti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hesapmakinesi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hesapmakinesi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolme-islemi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bolme-islemi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toplama-isareti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toplama-isareti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esittir-isareti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\esittir-isareti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carpma-isareti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carpma-isareti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daha-onceki-islemler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daha-onceki-islemler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hakkimizda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hakkimizda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="daha-onceki-islemler1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\daha-onceki-islemler1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAM-parti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAM-parti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CE-hesapmakinesi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CE-hesapmakinesi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c-hesapmakinesi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c-hesapmakinesi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
