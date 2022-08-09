@@ -21,6 +21,7 @@
             maskedTextBox_Sayi1.Text = "";
             maskedTextBox_Sayi2.Text = "";
         }
+
         private void button_Toplama_Click(object sender, EventArgs e)
         {
             islemmodu = "+";
@@ -65,6 +66,7 @@
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = false;
         }
+
         private void button_Liste_gecmisi_Click(object sender, EventArgs e)
         {
             durum = 6;
@@ -191,7 +193,7 @@
         //MaskedTextBocların olduğu bölge
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)/* && e.KeyChar != ',' && e.KeyChar != '-'*/;
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
         private void maskedTextBox_Sayi2_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -251,92 +253,155 @@
 
         private void anasayfa_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Control.ModifierKeys == Keys.Separator)
-            {
-                islemmodu = "÷";
-                durum = 4;
-                panel_dahaoncekiislemler.Visible = false;
-                listBox_Listececmisi.Visible = false;
-                panel_toplama.Visible = true;
-                pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
-            }
+            //if (Control.ModifierKeys == Keys.Separator)
+            //{
+            //    islemmodu = "÷";
+            //    durum = 4;
+            //    panel_dahaoncekiislemler.Visible = false;
+            //    listBox_Listececmisi.Visible = false;
+            //    panel_toplama.Visible = true;
+            //    pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
+            //}
         }
-        bool odaktext1 = false;
+
+        bool odaktext1 = true;
         bool odaktext2 = false;
         private void button_number_sifir_Click(object sender, EventArgs e)
         {
             if(odaktext1 == true)
             {
-                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "0"; 
-                odaktext1 = false;
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "0";
             }
             if (odaktext2 == true)
             {
-                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "0";
-                odaktext2 = false;
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "0";
             }
 
         }
         private void button_number_bir_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "1";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "1";
+            }
         }
-
         private void button_number_iki_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "2";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "2";
+            }
         }
-
         private void button_number_uc_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "3";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "3";
+            }
         }
-
         private void button_number_4_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "4";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "4";
+            }
         }
-
         private void button_number_bes_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "5";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "5";
+            }
         }
-
         private void button_number_altı_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "6";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "6";
+            }
         }
-
         private void button_number_yedi_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "7";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "7";
+            }
         }
-
         private void button_number_sekiz_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "8";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "8";
+            }
         }
-
         private void button_number_dokuz_Click(object sender, EventArgs e)
         {
-            
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "9";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "9";
+            }
         }
 
         private void button_number_eksi_Click(object sender, EventArgs e)
         {
+
         }
 
         private void button_numbervirgul_Click(object sender, EventArgs e)
         {
+
         }
 
-        private void maskedTextBox_Sayi1_Enter(object sender, EventArgs e)
+        private void maskedTextBox_Sayi1_Click(object sender, EventArgs e)
         {
+            if (odaktext2 == true)
+            {
+                odaktext2 = false;
+            }
             odaktext1 = true;
         }
-
-        private void maskedTextBox_Sayi2_Enter(object sender, EventArgs e)
+        private void maskedTextBox_Sayi2_Click(object sender, EventArgs e)
         {
+            if (odaktext1 == true)
+            {
+                odaktext1 = false;
+            }
             odaktext2 = true;
         }
     }

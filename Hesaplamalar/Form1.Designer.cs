@@ -148,7 +148,7 @@
             this.maskedTextBox_Sayi2.Size = new System.Drawing.Size(377, 39);
             this.maskedTextBox_Sayi2.TabIndex = 1;
             this.maskedTextBox_Sayi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maskedTextBox_Sayi2.Enter += new System.EventHandler(this.maskedTextBox_Sayi2_Enter);
+            this.maskedTextBox_Sayi2.Click += new System.EventHandler(this.maskedTextBox_Sayi2_Click);
             this.maskedTextBox_Sayi2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maskedTextBox_Sayi2_KeyDown);
             this.maskedTextBox_Sayi2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_Sayi2_KeyPress);
             // 
@@ -166,7 +166,7 @@
             this.maskedTextBox_Sayi1.Size = new System.Drawing.Size(377, 39);
             this.maskedTextBox_Sayi1.TabIndex = 0;
             this.maskedTextBox_Sayi1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maskedTextBox_Sayi1.Enter += new System.EventHandler(this.maskedTextBox_Sayi1_Enter);
+            this.maskedTextBox_Sayi1.Click += new System.EventHandler(this.maskedTextBox_Sayi1_Click);
             this.maskedTextBox_Sayi1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_Sayi1_KeyPress);
             // 
             // pictureBox_sembol
