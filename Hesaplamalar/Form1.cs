@@ -248,5 +248,96 @@
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
             //Resources dosyasında bulunan fotoğrafı dosya konumu yapıştırdık
         }
+
+        private void anasayfa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Control.ModifierKeys == Keys.Separator)
+            {
+                islemmodu = "÷";
+                durum = 4;
+                panel_dahaoncekiislemler.Visible = false;
+                listBox_Listececmisi.Visible = false;
+                panel_toplama.Visible = true;
+                pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
+            }
+        }
+        bool odaktext1 = false;
+        bool odaktext2 = false;
+        private void button_number_sifir_Click(object sender, EventArgs e)
+        {
+            if(odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "0"; 
+                odaktext1 = false;
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "0";
+                odaktext2 = false;
+            }
+
+        }
+        private void button_number_bir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_iki_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_uc_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_bes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_altı_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_yedi_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_sekiz_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_dokuz_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_number_eksi_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button_numbervirgul_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void maskedTextBox_Sayi1_Enter(object sender, EventArgs e)
+        {
+            odaktext1 = true;
+        }
+
+        private void maskedTextBox_Sayi2_Enter(object sender, EventArgs e)
+        {
+            odaktext2 = true;
+        }
     }
 }

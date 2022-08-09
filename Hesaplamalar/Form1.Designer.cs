@@ -89,6 +89,7 @@
             button_Toplama.Name = "button_Toplama";
             button_Toplama.Size = new System.Drawing.Size(50, 50);
             button_Toplama.TabIndex = 0;
+            button_Toplama.TabStop = false;
             button_Toplama.UseVisualStyleBackColor = false;
             button_Toplama.Click += new System.EventHandler(this.button_Toplama_Click);
             // 
@@ -128,9 +129,9 @@
             this.panel_toplama.Controls.Add(this.label_Sonuc);
             this.panel_toplama.Controls.Add(this.radioButton_tekislem);
             this.panel_toplama.Controls.Add(this.radioButton_surekiislem);
-            this.panel_toplama.Location = new System.Drawing.Point(49, 141);
+            this.panel_toplama.Location = new System.Drawing.Point(49, 87);
             this.panel_toplama.Name = "panel_toplama";
-            this.panel_toplama.Size = new System.Drawing.Size(799, 343);
+            this.panel_toplama.Size = new System.Drawing.Size(799, 397);
             this.panel_toplama.TabIndex = 2;
             // 
             // maskedTextBox_Sayi2
@@ -147,6 +148,7 @@
             this.maskedTextBox_Sayi2.Size = new System.Drawing.Size(377, 39);
             this.maskedTextBox_Sayi2.TabIndex = 1;
             this.maskedTextBox_Sayi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBox_Sayi2.Enter += new System.EventHandler(this.maskedTextBox_Sayi2_Enter);
             this.maskedTextBox_Sayi2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maskedTextBox_Sayi2_KeyDown);
             this.maskedTextBox_Sayi2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_Sayi2_KeyPress);
             // 
@@ -164,6 +166,7 @@
             this.maskedTextBox_Sayi1.Size = new System.Drawing.Size(377, 39);
             this.maskedTextBox_Sayi1.TabIndex = 0;
             this.maskedTextBox_Sayi1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBox_Sayi1.Enter += new System.EventHandler(this.maskedTextBox_Sayi1_Enter);
             this.maskedTextBox_Sayi1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_Sayi1_KeyPress);
             // 
             // pictureBox_sembol
@@ -198,7 +201,7 @@
             this.panel_number.Controls.Add(this.button_number_uc);
             this.panel_number.Controls.Add(this.button_number_sekiz);
             this.panel_number.Controls.Add(this.button_number_bir);
-            this.panel_number.Location = new System.Drawing.Point(282, 53);
+            this.panel_number.Location = new System.Drawing.Point(273, 94);
             this.panel_number.Name = "panel_number";
             this.panel_number.Size = new System.Drawing.Size(249, 290);
             this.panel_number.TabIndex = 20;
@@ -215,6 +218,7 @@
             this.button2_Bolme.Name = "button2_Bolme";
             this.button2_Bolme.Size = new System.Drawing.Size(50, 50);
             this.button2_Bolme.TabIndex = 2;
+            this.button2_Bolme.TabStop = false;
             this.button2_Bolme.UseVisualStyleBackColor = false;
             this.button2_Bolme.Click += new System.EventHandler(this.button2_Bolme_Click);
             // 
@@ -231,6 +235,7 @@
             this.button_Daha_onceki_islemler.Name = "button_Daha_onceki_islemler";
             this.button_Daha_onceki_islemler.Size = new System.Drawing.Size(50, 50);
             this.button_Daha_onceki_islemler.TabIndex = 4;
+            this.button_Daha_onceki_islemler.TabStop = false;
             this.button_Daha_onceki_islemler.UseVisualStyleBackColor = false;
             this.button_Daha_onceki_islemler.Click += new System.EventHandler(this.button_Daha_onceki_islemler_Click);
             // 
@@ -261,6 +266,7 @@
             this.button_number_eksi.TabStop = false;
             this.button_number_eksi.Text = "-";
             this.button_number_eksi.UseVisualStyleBackColor = true;
+            this.button_number_eksi.Click += new System.EventHandler(this.button_number_eksi_Click);
             // 
             // button_CE_sil
             // 
@@ -305,6 +311,7 @@
             this.button_Carpma.Name = "button_Carpma";
             this.button_Carpma.Size = new System.Drawing.Size(50, 50);
             this.button_Carpma.TabIndex = 3;
+            this.button_Carpma.TabStop = false;
             this.button_Carpma.UseVisualStyleBackColor = false;
             this.button_Carpma.Click += new System.EventHandler(this.button_Carpma_Click);
             // 
@@ -320,6 +327,7 @@
             this.button_Cikarma.Name = "button_Cikarma";
             this.button_Cikarma.Size = new System.Drawing.Size(50, 50);
             this.button_Cikarma.TabIndex = 1;
+            this.button_Cikarma.TabStop = false;
             this.button_Cikarma.UseVisualStyleBackColor = false;
             this.button_Cikarma.Click += new System.EventHandler(this.button_Cikarma_Click);
             // 
@@ -335,6 +343,7 @@
             this.button_number_dokuz.TabStop = false;
             this.button_number_dokuz.Text = "9";
             this.button_number_dokuz.UseVisualStyleBackColor = true;
+            this.button_number_dokuz.Click += new System.EventHandler(this.button_number_dokuz_Click);
             // 
             // button_numbervirgul
             // 
@@ -348,6 +357,7 @@
             this.button_numbervirgul.TabStop = false;
             this.button_numbervirgul.Text = ",";
             this.button_numbervirgul.UseVisualStyleBackColor = true;
+            this.button_numbervirgul.Click += new System.EventHandler(this.button_numbervirgul_Click);
             // 
             // button_number_yedi
             // 
@@ -361,6 +371,7 @@
             this.button_number_yedi.TabStop = false;
             this.button_number_yedi.Text = "7";
             this.button_number_yedi.UseVisualStyleBackColor = true;
+            this.button_number_yedi.Click += new System.EventHandler(this.button_number_yedi_Click);
             // 
             // button_number_sifir
             // 
@@ -374,6 +385,7 @@
             this.button_number_sifir.TabStop = false;
             this.button_number_sifir.Text = "0";
             this.button_number_sifir.UseVisualStyleBackColor = true;
+            this.button_number_sifir.Click += new System.EventHandler(this.button_number_sifir_Click);
             // 
             // button_number_altı
             // 
@@ -387,6 +399,7 @@
             this.button_number_altı.TabStop = false;
             this.button_number_altı.Text = "6";
             this.button_number_altı.UseVisualStyleBackColor = true;
+            this.button_number_altı.Click += new System.EventHandler(this.button_number_altı_Click);
             // 
             // button_number_iki
             // 
@@ -400,6 +413,7 @@
             this.button_number_iki.TabStop = false;
             this.button_number_iki.Text = "2";
             this.button_number_iki.UseVisualStyleBackColor = true;
+            this.button_number_iki.Click += new System.EventHandler(this.button_number_iki_Click);
             // 
             // button_number_4
             // 
@@ -413,6 +427,7 @@
             this.button_number_4.TabStop = false;
             this.button_number_4.Text = "4";
             this.button_number_4.UseVisualStyleBackColor = true;
+            this.button_number_4.Click += new System.EventHandler(this.button_number_4_Click);
             // 
             // button_number_bes
             // 
@@ -426,6 +441,7 @@
             this.button_number_bes.TabStop = false;
             this.button_number_bes.Text = "5";
             this.button_number_bes.UseVisualStyleBackColor = true;
+            this.button_number_bes.Click += new System.EventHandler(this.button_number_bes_Click);
             // 
             // button_number_uc
             // 
@@ -439,6 +455,7 @@
             this.button_number_uc.TabStop = false;
             this.button_number_uc.Text = "3";
             this.button_number_uc.UseVisualStyleBackColor = true;
+            this.button_number_uc.Click += new System.EventHandler(this.button_number_uc_Click);
             // 
             // button_number_sekiz
             // 
@@ -452,6 +469,7 @@
             this.button_number_sekiz.TabStop = false;
             this.button_number_sekiz.Text = "8";
             this.button_number_sekiz.UseVisualStyleBackColor = true;
+            this.button_number_sekiz.Click += new System.EventHandler(this.button_number_sekiz_Click);
             // 
             // button_number_bir
             // 
@@ -465,6 +483,7 @@
             this.button_number_bir.TabStop = false;
             this.button_number_bir.Text = "1";
             this.button_number_bir.UseVisualStyleBackColor = true;
+            this.button_number_bir.Click += new System.EventHandler(this.button_number_bir_Click);
             // 
             // label_Sonuc
             // 
@@ -479,7 +498,7 @@
             // 
             this.radioButton_tekislem.AutoSize = true;
             this.radioButton_tekislem.Checked = true;
-            this.radioButton_tekislem.Location = new System.Drawing.Point(177, 305);
+            this.radioButton_tekislem.Location = new System.Drawing.Point(168, 346);
             this.radioButton_tekislem.Name = "radioButton_tekislem";
             this.radioButton_tekislem.Size = new System.Drawing.Size(99, 25);
             this.radioButton_tekislem.TabIndex = 4;
@@ -491,7 +510,7 @@
             // radioButton_surekiislem
             // 
             this.radioButton_surekiislem.AutoSize = true;
-            this.radioButton_surekiislem.Location = new System.Drawing.Point(42, 305);
+            this.radioButton_surekiislem.Location = new System.Drawing.Point(33, 346);
             this.radioButton_surekiislem.Name = "radioButton_surekiislem";
             this.radioButton_surekiislem.Size = new System.Drawing.Size(126, 25);
             this.radioButton_surekiislem.TabIndex = 3;
@@ -616,6 +635,7 @@
             this.Name = "anasayfa";
             this.Text = "Hesap Makinesi";
             this.Load += new System.EventHandler(this.anasayfa_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.anasayfa_KeyPress);
             this.tabControl_Menu.ResumeLayout(false);
             this.tabPage_Hesap_Makinesi.ResumeLayout(false);
             this.panel_toplama.ResumeLayout(false);

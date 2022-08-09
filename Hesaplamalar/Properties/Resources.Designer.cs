@@ -82,13 +82,8 @@ namespace Hesaplamalar.Properties {
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CAM_parti {
-            get {
-                object obj = ResourceManager.GetObject("CAM-parti", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        /// </summary>}
+        
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
