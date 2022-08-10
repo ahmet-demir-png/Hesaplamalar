@@ -207,7 +207,14 @@
         }
         private void button_CE_sil_Click(object sender, EventArgs e)
         {
-
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = "";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = "";
+            }
         }
         private void button_number_c_sil_Click(object sender, EventArgs e)
         {
@@ -224,8 +231,9 @@
         {
             if(sureklisilemkontrol == false)
             {
+                //radioButton_tekislem.Enabled = false;
+                radioButton_surekiislem.Checked = true;
                 MessageBox.Show("Önce Tekil işlem yapmanız gerekiyor. Ön işlem yapılmamıştır.");
-                radioButton_tekislem.Checked = true;
                 //return;
             }
             if (sureklisilemkontrol == true)
@@ -380,12 +388,26 @@
 
         private void button_number_eksi_Click(object sender, EventArgs e)
         {
-
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "-";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "-";
+            }
         }
 
         private void button_numbervirgul_Click(object sender, EventArgs e)
         {
-
+            if (odaktext1 == true)
+            {
+                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + ",";
+            }
+            if (odaktext2 == true)
+            {
+                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + ",";
+            }
         }
 
         private void maskedTextBox_Sayi1_Click(object sender, EventArgs e)
