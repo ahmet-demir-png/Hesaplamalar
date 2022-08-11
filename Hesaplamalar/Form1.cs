@@ -16,10 +16,16 @@
         }
         private void anasayfa_Load(object sender, EventArgs e)
         {
-            radioButton_surekiislem.Checked = false;
-            radioButton_tekislem.Checked = true;
-            maskedTextBox_Sayi1.Text = "";
-            maskedTextBox_Sayi2.Text = "";
+            if (durum == 1)
+            {
+                radioButton_surekiislem.Checked = false;
+                radioButton_tekislem.Checked = true;
+                maskedTextBox_Sayi1.Text = "";
+                maskedTextBox_Sayi2.Text = "";
+                panel_dahaoncekiislemler.Visible = false;
+                listBox_Listececmisi.Visible = false;
+                panel_toplama.Visible = true;
+            }
         }
 
         private void button_Toplama_Click(object sender, EventArgs e)
@@ -161,8 +167,8 @@
                     sureklisilemkontrol = true;
                 }
             }
-            listBox_Listececmisi.Items.Add(sayi1 + islemmodu + toplam);
-            listBox_dahaoncekiislemler.Items.Add(sayi1 + islemmodu + toplam);
+            listBox_Listececmisi.Items.Add(sayi1 + islemmodu + sayi2 + " = " + toplam);
+            listBox_dahaoncekiislemler.Items.Add(sayi1 + islemmodu + sayi2 + " = " + toplam);
         }
         private void maskedTextBox_Sayi2_KeyDown(object sender, KeyEventArgs e)
         {
@@ -231,10 +237,8 @@
         {
             if(sureklisilemkontrol == false)
             {
-                //radioButton_tekislem.Enabled = false;
-                radioButton_surekiislem.Checked = true;
+                radioButton_tekislem.Checked = true;
                 MessageBox.Show("Önce Tekil işlem yapmanız gerekiyor. Ön işlem yapılmamıştır.");
-                //return;
             }
             if (sureklisilemkontrol == true)
             {
@@ -390,25 +394,53 @@
         {
             if (odaktext1 == true)
             {
-                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + "-";
+                if(maskedTextBox_Sayi1.Text.Contains("-") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_Sayi1.Text = "-" + maskedTextBox_Sayi1.Text;
+                }
             }
             if (odaktext2 == true)
             {
-                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "-";
+                if (maskedTextBox_Sayi2.Text.Contains("-") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_Sayi2.Text = "-" + maskedTextBox_Sayi2.Text;
+                }
             }
         }
-
         private void button_numbervirgul_Click(object sender, EventArgs e)
         {
             if (odaktext1 == true)
             {
-                maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + ",";
+                if (maskedTextBox_Sayi1.Text.Contains(",") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_Sayi1.Text = maskedTextBox_Sayi1.Text + ",";
+                }
             }
             if (odaktext2 == true)
             {
-                maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + ",";
+                if (maskedTextBox_Sayi2.Text.Contains(",") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + ",";
+                }
             }
         }
+        
 
         private void maskedTextBox_Sayi1_Click(object sender, EventArgs e)
         {
