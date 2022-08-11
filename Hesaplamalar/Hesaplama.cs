@@ -31,6 +31,7 @@ public class Hesaplama
     {
         return a % b;
     }
+
     public double dairealan(double c)
     {
         return PIDegeriniGetir() * (c * c);

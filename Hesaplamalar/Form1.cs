@@ -9,7 +9,7 @@
         public bool sureklisilemkontrol = false;
         int durum = 1;
         string islemmodu = "+";
-        // 1 değeri toplama 2 değeri çıkarma 3 değeri bölme 4 değeri bölme işlemi 5 daha önceki işlemler 6 geçmiş işlemler
+        //  DURUM değer : 1 değeri toplama, 2 değeri çıkarma, 3 değeri bölme, 4 değeri bölme, 5 değeri daha öneci işlemler, 6 değeri liste geçmişi.
         public anasayfa()
         {
             InitializeComponent();
@@ -72,7 +72,6 @@
             listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = false;
         }
-
         private void button_Liste_gecmisi_Click(object sender, EventArgs e)
         {
             durum = 6;
@@ -81,7 +80,7 @@
             panel_toplama.Visible = false;
         }
 
-        // Hesaplama ve sonuç işlemler
+        // Hesaplama ve sonuç işlemleri
         public void hesapla()   
         {
             sayi1 = Convert.ToDouble(maskedTextBox_Sayi1.Text);
@@ -196,7 +195,7 @@
             }
         }
 
-        //MaskedTextBocların olduğu bölge
+        //MaskedTextBoXların olduğu bölge
         private void maskedTextBox_Sayi1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
@@ -204,6 +203,22 @@
         private void maskedTextBox_Sayi2_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) /*&& e.KeyChar != ',' && e.KeyChar != '-'*/;
+        }
+        private void maskedTextBox_Sayi1_Click(object sender, EventArgs e)
+        {
+            if (odaktext2 == true)
+            {
+                odaktext2 = false;
+            }
+            odaktext1 = true;
+        }
+        private void maskedTextBox_Sayi2_Click(object sender, EventArgs e)
+        {
+            if (odaktext1 == true)
+            {
+                odaktext1 = false;
+            }
+            odaktext2 = true;
         }
 
         //Butonların işlemleri
@@ -231,6 +246,16 @@
             sayi2 = 0;
             toplam = 0;
         }
+        private void button_geri_don_Click(object sender, EventArgs e)
+        {
+            islemmodu = "+";
+            durum = 1;
+            panel_dahaoncekiislemler.Visible = false;
+            listBox_Listececmisi.Visible = false;
+            panel_toplama.Visible = true;
+            pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
+            //Resources dosyasında bulunan fotoğrafı dosya konumu yapıştırdık
+        }
 
         //Radio Butonlarının oldğu kısım
         private void radioButton_surekiislem_CheckedChanged(object sender, EventArgs e)
@@ -252,30 +277,7 @@
             maskedTextBox_Sayi1.Enabled = true;
         }
 
-        private void button_geri_don_Click(object sender, EventArgs e)
-        {
-            islemmodu = "+";
-            durum = 1;
-            panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
-            panel_toplama.Visible = true;
-            pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
-            //Resources dosyasında bulunan fotoğrafı dosya konumu yapıştırdık
-        }
-
-        private void anasayfa_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (Control.ModifierKeys == Keys.Separator)
-            //{
-            //    islemmodu = "÷";
-            //    durum = 4;
-            //    panel_dahaoncekiislemler.Visible = false;
-            //    listBox_Listececmisi.Visible = false;
-            //    panel_toplama.Visible = true;
-            //    pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
-            //}
-        }
-
+        //Number button bolgesinde değerler
         bool odaktext1 = true;
         bool odaktext2 = false;
         private void button_number_sifir_Click(object sender, EventArgs e)
@@ -389,7 +391,6 @@
                 maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + "9";
             }
         }
-
         private void button_number_eksi_Click(object sender, EventArgs e)
         {
             if (odaktext1 == true)
@@ -439,24 +440,6 @@
                     maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + ",";
                 }
             }
-        }
-        
-
-        private void maskedTextBox_Sayi1_Click(object sender, EventArgs e)
-        {
-            if (odaktext2 == true)
-            {
-                odaktext2 = false;
-            }
-            odaktext1 = true;
-        }
-        private void maskedTextBox_Sayi2_Click(object sender, EventArgs e)
-        {
-            if (odaktext1 == true)
-            {
-                odaktext1 = false;
-            }
-            odaktext2 = true;
         }
     }
 }

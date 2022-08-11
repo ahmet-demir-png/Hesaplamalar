@@ -67,6 +67,25 @@
             this.button_geri_don = new System.Windows.Forms.Button();
             this.button_Liste_gecmisi = new System.Windows.Forms.Button();
             this.tabPage_Yol_Hız_Zaman = new System.Windows.Forms.TabPage();
+            this.pictureBox_farkli_islmeler = new System.Windows.Forms.PictureBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button_2_onceki_islemler = new System.Windows.Forms.Button();
+            this.button_2_number_c = new System.Windows.Forms.Button();
+            this.button_2_number_minus_sign = new System.Windows.Forms.Button();
+            this.button_2_number_ce = new System.Windows.Forms.Button();
+            this.button_2_number_equals = new System.Windows.Forms.Button();
+            this.button_2_nine = new System.Windows.Forms.Button();
+            this.button_2_number_comma = new System.Windows.Forms.Button();
+            this.button_2_number_seven = new System.Windows.Forms.Button();
+            this.button_2_number_zero = new System.Windows.Forms.Button();
+            this.button_2_number_six = new System.Windows.Forms.Button();
+            this.button_2_number_two = new System.Windows.Forms.Button();
+            this.button_2_number_four = new System.Windows.Forms.Button();
+            this.button_2_number_five = new System.Windows.Forms.Button();
+            this.button_2_number_three = new System.Windows.Forms.Button();
+            this.button_2_number_eight = new System.Windows.Forms.Button();
+            this.button_2_number_one = new System.Windows.Forms.Button();
             button_Toplama = new System.Windows.Forms.Button();
             this.tabControl_Menu.SuspendLayout();
             this.tabPage_Hesap_Makinesi.SuspendLayout();
@@ -75,6 +94,9 @@
             this.panel_number.SuspendLayout();
             this.panel_dahaoncekiislemler.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabPage_Yol_Hız_Zaman.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_farkli_islmeler)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Toplama
@@ -614,6 +636,9 @@
             // tabPage_Yol_Hız_Zaman
             // 
             this.tabPage_Yol_Hız_Zaman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.tabPage_Yol_Hız_Zaman.Controls.Add(this.panel2);
+            this.tabPage_Yol_Hız_Zaman.Controls.Add(this.maskedTextBox1);
+            this.tabPage_Yol_Hız_Zaman.Controls.Add(this.pictureBox_farkli_islmeler);
             this.tabPage_Yol_Hız_Zaman.ForeColor = System.Drawing.Color.White;
             this.tabPage_Yol_Hız_Zaman.Location = new System.Drawing.Point(4, 30);
             this.tabPage_Yol_Hız_Zaman.Name = "tabPage_Yol_Hız_Zaman";
@@ -621,6 +646,266 @@
             this.tabPage_Yol_Hız_Zaman.Size = new System.Drawing.Size(882, 533);
             this.tabPage_Yol_Hız_Zaman.TabIndex = 1;
             this.tabPage_Yol_Hız_Zaman.Text = "Farkı İşlemler";
+            // 
+            // pictureBox_farkli_islmeler
+            // 
+            this.pictureBox_farkli_islmeler.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_farkli_islmeler.Name = "pictureBox_farkli_islmeler";
+            this.pictureBox_farkli_islmeler.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox_farkli_islmeler.TabIndex = 0;
+            this.pictureBox_farkli_islmeler.TabStop = false;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.maskedTextBox1.Location = new System.Drawing.Point(247, 139);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.PromptChar = ' ';
+            this.maskedTextBox1.Size = new System.Drawing.Size(254, 39);
+            this.maskedTextBox1.TabIndex = 1;
+            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button_2_onceki_islemler);
+            this.panel2.Controls.Add(this.button_2_number_c);
+            this.panel2.Controls.Add(this.button_2_number_minus_sign);
+            this.panel2.Controls.Add(this.button_2_number_ce);
+            this.panel2.Controls.Add(this.button_2_number_equals);
+            this.panel2.Controls.Add(this.button_2_nine);
+            this.panel2.Controls.Add(this.button_2_number_comma);
+            this.panel2.Controls.Add(this.button_2_number_seven);
+            this.panel2.Controls.Add(this.button_2_number_zero);
+            this.panel2.Controls.Add(this.button_2_number_six);
+            this.panel2.Controls.Add(this.button_2_number_two);
+            this.panel2.Controls.Add(this.button_2_number_four);
+            this.panel2.Controls.Add(this.button_2_number_five);
+            this.panel2.Controls.Add(this.button_2_number_three);
+            this.panel2.Controls.Add(this.button_2_number_eight);
+            this.panel2.Controls.Add(this.button_2_number_one);
+            this.panel2.Location = new System.Drawing.Point(8, 212);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 241);
+            this.panel2.TabIndex = 21;
+            // 
+            // button_2_onceki_islemler
+            // 
+            this.button_2_onceki_islemler.AutoSize = true;
+            this.button_2_onceki_islemler.BackColor = System.Drawing.Color.Transparent;
+            this.button_2_onceki_islemler.BackgroundImage = global::Hesaplamalar.Properties.Resources.daha_onceki_islemler1;
+            this.button_2_onceki_islemler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_2_onceki_islemler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_onceki_islemler.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_onceki_islemler.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(241)))), ((int)(((byte)(172)))));
+            this.button_2_onceki_islemler.Location = new System.Drawing.Point(182, 10);
+            this.button_2_onceki_islemler.Name = "button_2_onceki_islemler";
+            this.button_2_onceki_islemler.Size = new System.Drawing.Size(50, 50);
+            this.button_2_onceki_islemler.TabIndex = 4;
+            this.button_2_onceki_islemler.TabStop = false;
+            this.button_2_onceki_islemler.UseVisualStyleBackColor = false;
+            // 
+            // button_2_number_c
+            // 
+            this.button_2_number_c.BackgroundImage = global::Hesaplamalar.Properties.Resources.c_hesapmakinesi;
+            this.button_2_number_c.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_2_number_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_c.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_c.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button_2_number_c.Location = new System.Drawing.Point(182, 122);
+            this.button_2_number_c.Name = "button_2_number_c";
+            this.button_2_number_c.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_c.TabIndex = 20;
+            this.button_2_number_c.TabStop = false;
+            this.button_2_number_c.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_minus_sign
+            // 
+            this.button_2_number_minus_sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_minus_sign.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_minus_sign.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_minus_sign.Location = new System.Drawing.Point(14, 178);
+            this.button_2_number_minus_sign.Name = "button_2_number_minus_sign";
+            this.button_2_number_minus_sign.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_minus_sign.TabIndex = 19;
+            this.button_2_number_minus_sign.TabStop = false;
+            this.button_2_number_minus_sign.Text = "-";
+            this.button_2_number_minus_sign.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_ce
+            // 
+            this.button_2_number_ce.BackgroundImage = global::Hesaplamalar.Properties.Resources.CE_hesapmakinesi;
+            this.button_2_number_ce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_2_number_ce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_ce.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_ce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button_2_number_ce.Location = new System.Drawing.Point(182, 66);
+            this.button_2_number_ce.Name = "button_2_number_ce";
+            this.button_2_number_ce.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_ce.TabIndex = 6;
+            this.button_2_number_ce.TabStop = false;
+            this.button_2_number_ce.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_equals
+            // 
+            this.button_2_number_equals.BackColor = System.Drawing.Color.Green;
+            this.button_2_number_equals.BackgroundImage = global::Hesaplamalar.Properties.Resources.esittir_isareti;
+            this.button_2_number_equals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button_2_number_equals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_equals.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_equals.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_equals.Location = new System.Drawing.Point(182, 178);
+            this.button_2_number_equals.Name = "button_2_number_equals";
+            this.button_2_number_equals.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_equals.TabIndex = 7;
+            this.button_2_number_equals.TabStop = false;
+            this.button_2_number_equals.UseVisualStyleBackColor = false;
+            // 
+            // button_2_nine
+            // 
+            this.button_2_nine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_nine.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_nine.ForeColor = System.Drawing.Color.White;
+            this.button_2_nine.Location = new System.Drawing.Point(126, 10);
+            this.button_2_nine.Name = "button_2_nine";
+            this.button_2_nine.Size = new System.Drawing.Size(50, 50);
+            this.button_2_nine.TabIndex = 18;
+            this.button_2_nine.TabStop = false;
+            this.button_2_nine.Text = "9";
+            this.button_2_nine.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_comma
+            // 
+            this.button_2_number_comma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_comma.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_comma.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_comma.Location = new System.Drawing.Point(126, 178);
+            this.button_2_number_comma.Name = "button_2_number_comma";
+            this.button_2_number_comma.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_comma.TabIndex = 8;
+            this.button_2_number_comma.TabStop = false;
+            this.button_2_number_comma.Text = ",";
+            this.button_2_number_comma.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_seven
+            // 
+            this.button_2_number_seven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_seven.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_seven.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_seven.Location = new System.Drawing.Point(14, 10);
+            this.button_2_number_seven.Name = "button_2_number_seven";
+            this.button_2_number_seven.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_seven.TabIndex = 17;
+            this.button_2_number_seven.TabStop = false;
+            this.button_2_number_seven.Text = "7";
+            this.button_2_number_seven.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_zero
+            // 
+            this.button_2_number_zero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_zero.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_zero.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_zero.Location = new System.Drawing.Point(70, 178);
+            this.button_2_number_zero.Name = "button_2_number_zero";
+            this.button_2_number_zero.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_zero.TabIndex = 9;
+            this.button_2_number_zero.TabStop = false;
+            this.button_2_number_zero.Text = "0";
+            this.button_2_number_zero.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_six
+            // 
+            this.button_2_number_six.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_six.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_six.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_six.Location = new System.Drawing.Point(126, 66);
+            this.button_2_number_six.Name = "button_2_number_six";
+            this.button_2_number_six.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_six.TabIndex = 16;
+            this.button_2_number_six.TabStop = false;
+            this.button_2_number_six.Text = "6";
+            this.button_2_number_six.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_two
+            // 
+            this.button_2_number_two.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_two.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_two.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_two.Location = new System.Drawing.Point(70, 122);
+            this.button_2_number_two.Name = "button_2_number_two";
+            this.button_2_number_two.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_two.TabIndex = 10;
+            this.button_2_number_two.TabStop = false;
+            this.button_2_number_two.Text = "2";
+            this.button_2_number_two.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_four
+            // 
+            this.button_2_number_four.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_four.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_four.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_four.Location = new System.Drawing.Point(14, 66);
+            this.button_2_number_four.Name = "button_2_number_four";
+            this.button_2_number_four.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_four.TabIndex = 15;
+            this.button_2_number_four.TabStop = false;
+            this.button_2_number_four.Text = "4";
+            this.button_2_number_four.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_five
+            // 
+            this.button_2_number_five.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_five.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_five.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_five.Location = new System.Drawing.Point(70, 66);
+            this.button_2_number_five.Name = "button_2_number_five";
+            this.button_2_number_five.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_five.TabIndex = 11;
+            this.button_2_number_five.TabStop = false;
+            this.button_2_number_five.Text = "5";
+            this.button_2_number_five.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_three
+            // 
+            this.button_2_number_three.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_three.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_three.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_three.Location = new System.Drawing.Point(126, 122);
+            this.button_2_number_three.Name = "button_2_number_three";
+            this.button_2_number_three.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_three.TabIndex = 14;
+            this.button_2_number_three.TabStop = false;
+            this.button_2_number_three.Text = "3";
+            this.button_2_number_three.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_eight
+            // 
+            this.button_2_number_eight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_eight.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_eight.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_eight.Location = new System.Drawing.Point(70, 10);
+            this.button_2_number_eight.Name = "button_2_number_eight";
+            this.button_2_number_eight.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_eight.TabIndex = 12;
+            this.button_2_number_eight.TabStop = false;
+            this.button_2_number_eight.Text = "8";
+            this.button_2_number_eight.UseVisualStyleBackColor = true;
+            // 
+            // button_2_number_one
+            // 
+            this.button_2_number_one.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2_number_one.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_2_number_one.ForeColor = System.Drawing.Color.White;
+            this.button_2_number_one.Location = new System.Drawing.Point(14, 122);
+            this.button_2_number_one.Name = "button_2_number_one";
+            this.button_2_number_one.Size = new System.Drawing.Size(50, 50);
+            this.button_2_number_one.TabIndex = 13;
+            this.button_2_number_one.TabStop = false;
+            this.button_2_number_one.Text = "1";
+            this.button_2_number_one.UseVisualStyleBackColor = true;
             // 
             // anasayfa
             // 
@@ -635,7 +920,6 @@
             this.Name = "anasayfa";
             this.Text = "Hesap Makinesi";
             this.Load += new System.EventHandler(this.anasayfa_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.anasayfa_KeyPress);
             this.tabControl_Menu.ResumeLayout(false);
             this.tabPage_Hesap_Makinesi.ResumeLayout(false);
             this.panel_toplama.ResumeLayout(false);
@@ -645,6 +929,11 @@
             this.panel_number.PerformLayout();
             this.panel_dahaoncekiislemler.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.tabPage_Yol_Hız_Zaman.ResumeLayout(false);
+            this.tabPage_Yol_Hız_Zaman.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_farkli_islmeler)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -689,5 +978,24 @@
         private Button button_number_bir;
         private PictureBox pictureBox_sembol;
         private Button button_geri_don;
+        private PictureBox pictureBox_farkli_islmeler;
+        private Panel panel2;
+        private Button button_2_onceki_islemler;
+        private Button button_2_number_c;
+        private Button button_2_number_minus_sign;
+        private Button button_2_number_ce;
+        private Button button_2_number_equals;
+        private Button button_2_nine;
+        private Button button_2_number_comma;
+        private Button button_2_number_seven;
+        private Button button_2_number_zero;
+        private Button button_2_number_six;
+        private Button button_2_number_two;
+        private Button button_2_number_four;
+        private Button button_2_number_five;
+        private Button button_2_number_three;
+        private Button button_2_number_eight;
+        private Button button_2_number_one;
+        public MaskedTextBox maskedTextBox1;
     }
 }
