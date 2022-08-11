@@ -33,7 +33,6 @@
             islemmodu = "+";
             durum = 1;
             panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
             //Resources dosyasında bulunan fotoğrafı dosya konumu yapıştırdık
@@ -43,7 +42,6 @@
             islemmodu = "−";
             durum = 2;
             panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Eksi-isareti.png");
         }
@@ -52,7 +50,6 @@
             islemmodu = "÷";
             durum = 4;
             panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
         }
@@ -61,7 +58,6 @@
             islemmodu = "×";
             durum = 3;
             panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\carpma-isareti.png");
         }
@@ -69,14 +65,6 @@
         {
             durum = 5;
             panel_dahaoncekiislemler.Visible = true;
-            listBox_Listececmisi.Visible = false;
-            panel_toplama.Visible = false;
-        }
-        private void button_Liste_gecmisi_Click(object sender, EventArgs e)
-        {
-            durum = 6;
-            panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = true;
             panel_toplama.Visible = false;
         }
 

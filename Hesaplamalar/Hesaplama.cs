@@ -6,6 +6,7 @@ public class Hesaplama
     {
         return 3.14;
     }
+    //4 işlem
 
     public double Toplama(double a, double b)
     {
