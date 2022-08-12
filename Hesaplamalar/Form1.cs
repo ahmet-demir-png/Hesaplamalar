@@ -23,7 +23,6 @@
                 maskedTextBox_Sayi1.Text = "";
                 maskedTextBox_Sayi2.Text = "";
                 panel_dahaoncekiislemler.Visible = false;
-                listBox_Listececmisi.Visible = false;
                 panel_toplama.Visible = true;
             }
         }
@@ -239,7 +238,6 @@
             islemmodu = "+";
             durum = 1;
             panel_dahaoncekiislemler.Visible = false;
-            listBox_Listececmisi.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
             //Resources dosyasında bulunan fotoğrafı dosya konumu yapıştırdık
