@@ -484,9 +484,58 @@
 
         private void hesapla_farkli()
         {
+            double sayi1 = Convert.ToDouble(maskedTextBox_a.Text);
+            double sayi2 = Convert.ToDouble(maskedTextBox_b.Text);
+            double sayi3 = Convert.ToDouble(maskedTextBox_c.Text);
             if(durum_farkli_islem == 1)
             {
-                label_a.Text = "Dairenin Yarı Çapı Giriniz:";
+                label_a.Text = "Dairenin (r)Yarı Çapını Giriniz:";
+                label_b.Text = "Dairenin Alanı: " + hsp.dairealan(sayi1);
+            }
+            if(durum_farkli_islem == 2)
+            {
+                label_a.Text = "Dairenin Yarı Çapını Giriniz:";
+                label_b.Text = "Dairenin Çevresi: " + hsp.dairecevre(sayi1);
+            }
+            if (durum_farkli_islem == 3)
+            {
+                label_a.Text = "Dikdörtgenin a kenarını giriniz:";
+                label_b.Text = "Dikdörtgenin b kenarını giriniz:";
+                label_c.Text = "Dikdörtgenin Alanı: " + hsp.dikdortgenalan(sayi1, sayi2);
+            }
+            if (durum_farkli_islem == 4)
+            {
+                label_a.Text = "Dikdörtgenin a Kenarını Giriniz:";
+                label_b.Text = "Dikdörgenin b Kenarını Giriniz:";
+                label_c.Text = "Dikdörtgenin Çevresi: " + hsp.dikdortgencevre(sayi1, sayi2);
+            }
+            if (durum_farkli_islem == 5)
+            {
+                label_a.Text = "Karenin a Kenarını Giriniz:";
+                label_c.Text = "Karenin Alan: " + hsp.karealan(sayi1);
+            }
+            if (durum_farkli_islem == 6)
+            {
+                label_a.Text = "Karenin a Kenarını Giriniz:";
+                label_c.Text = "Karenin Çevre " + hsp.karecevre(sayi1);
+            }
+            if(durum_farkli_islem == 7)
+            {
+                label_a.Text = "Hızı Giriniz:";
+                label_b.Text = "Zamanı Giriniz";
+                label_c.Text = "Yol uzunluğu: " + hsp.yolhesaplama(sayi1, sayi2);
+            }
+            if (durum_farkli_islem == 8)
+            {
+                label_a.Text = "Yolu Giriniz:";
+                label_b.Text = "Zamanı Giriniz";
+                label_c.Text = "Hız:" + hsp.hizhesaplama(sayi1, sayi2);
+            }
+            if(durum_farkli_islem == 9)
+            {
+                label_a.Text = "Hızı Giriniz:";
+                label_b.Text = "Hızı Giriniz";
+                label_c.Text = "Zaman: " + hsp.zamanhesaplama(sayi1, sayi2);
             }
         }
 
