@@ -59,14 +59,28 @@
             this.button_number_uc = new System.Windows.Forms.Button();
             this.button_number_sekiz = new System.Windows.Forms.Button();
             this.button_number_bir = new System.Windows.Forms.Button();
+            this.label_Sonuc = new System.Windows.Forms.Label();
             this.panel_dahaoncekiislemler = new System.Windows.Forms.Panel();
             this.button_geri_don = new System.Windows.Forms.Button();
             this.button_temizle = new System.Windows.Forms.Button();
             this.listBox_dahaoncekiislemler = new System.Windows.Forms.ListBox();
             this.tabPage_farkli_islemler = new System.Windows.Forms.TabPage();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.label_c = new System.Windows.Forms.Label();
+            this.label_b = new System.Windows.Forms.Label();
+            this.label_a = new System.Windows.Forms.Label();
+            this.panel_hızyolzaman = new System.Windows.Forms.Panel();
+            this.button_hizhesap = new System.Windows.Forms.Button();
+            this.button_zamanhesap = new System.Windows.Forms.Button();
+            this.button_yolhesap = new System.Windows.Forms.Button();
+            this.maskedTextBox_b = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox_c = new System.Windows.Forms.MaskedTextBox();
             this.panel_sekiller = new System.Windows.Forms.Panel();
+            this.button_karecevre = new System.Windows.Forms.Button();
+            this.button_karealan = new System.Windows.Forms.Button();
+            this.button_dikdortgencevre = new System.Windows.Forms.Button();
+            this.button_dikdortgenalan = new System.Windows.Forms.Button();
+            this.button_dairecevre = new System.Windows.Forms.Button();
+            this.button_dairealan = new System.Windows.Forms.Button();
             this.panel_number_2 = new System.Windows.Forms.Panel();
             this.button_2_onceki_islemler = new System.Windows.Forms.Button();
             this.button_2_number_c = new System.Windows.Forms.Button();
@@ -84,24 +98,10 @@
             this.button_2_number_three = new System.Windows.Forms.Button();
             this.button_2_number_eight = new System.Windows.Forms.Button();
             this.button_2_number_one = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox_a = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox_farkli_islmeler = new System.Windows.Forms.PictureBox();
             this.tabPage_gecmis_islemler = new System.Windows.Forms.TabPage();
             this.listBox_Listececmisi = new System.Windows.Forms.ListBox();
-            this.button_dairealan = new System.Windows.Forms.Button();
-            this.button_dairecevre = new System.Windows.Forms.Button();
-            this.button_dikdortgenalan = new System.Windows.Forms.Button();
-            this.button_dikdortgencevre = new System.Windows.Forms.Button();
-            this.button_karealan = new System.Windows.Forms.Button();
-            this.button_karecevre = new System.Windows.Forms.Button();
-            this.panel_hızyolzaman = new System.Windows.Forms.Panel();
-            this.button_hizhesap = new System.Windows.Forms.Button();
-            this.button_zamanhesap = new System.Windows.Forms.Button();
-            this.button_yolhesap = new System.Windows.Forms.Button();
-            this.label_Sonuc = new System.Windows.Forms.Label();
-            this.label_a = new System.Windows.Forms.Label();
-            this.label_b = new System.Windows.Forms.Label();
-            this.label_c = new System.Windows.Forms.Label();
             button_Toplama = new System.Windows.Forms.Button();
             this.tabControl_Menu.SuspendLayout();
             this.tabPage_Hesap_Makinesi.SuspendLayout();
@@ -111,11 +111,11 @@
             this.panel_number.SuspendLayout();
             this.panel_dahaoncekiislemler.SuspendLayout();
             this.tabPage_farkli_islemler.SuspendLayout();
+            this.panel_hızyolzaman.SuspendLayout();
             this.panel_sekiller.SuspendLayout();
             this.panel_number_2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_farkli_islmeler)).BeginInit();
             this.tabPage_gecmis_islemler.SuspendLayout();
-            this.panel_hızyolzaman.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Toplama
@@ -557,6 +557,15 @@
             this.button_number_bir.UseVisualStyleBackColor = true;
             this.button_number_bir.Click += new System.EventHandler(this.button_number_bir_Click);
             // 
+            // label_Sonuc
+            // 
+            this.label_Sonuc.AutoSize = true;
+            this.label_Sonuc.Location = new System.Drawing.Point(3, 113);
+            this.label_Sonuc.Name = "label_Sonuc";
+            this.label_Sonuc.Size = new System.Drawing.Size(61, 21);
+            this.label_Sonuc.TabIndex = 5;
+            this.label_Sonuc.Text = "Sonuç:";
+            // 
             // panel_dahaoncekiislemler
             // 
             this.panel_dahaoncekiislemler.Controls.Add(this.button_geri_don);
@@ -619,11 +628,11 @@
             this.tabPage_farkli_islemler.Controls.Add(this.label_b);
             this.tabPage_farkli_islemler.Controls.Add(this.label_a);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_hızyolzaman);
-            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox3);
-            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox2);
+            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_b);
+            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_c);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_sekiller);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_number_2);
-            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox1);
+            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_a);
             this.tabPage_farkli_islemler.Controls.Add(this.pictureBox_farkli_islmeler);
             this.tabPage_farkli_islemler.ForeColor = System.Drawing.Color.White;
             this.tabPage_farkli_islemler.Location = new System.Drawing.Point(4, 30);
@@ -633,33 +642,112 @@
             this.tabPage_farkli_islemler.TabIndex = 1;
             this.tabPage_farkli_islemler.Text = "Farkı İşlemler";
             // 
-            // maskedTextBox3
+            // label_c
             // 
-            this.maskedTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox3.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox3.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskedTextBox3.Location = new System.Drawing.Point(237, 326);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.PromptChar = ' ';
-            this.maskedTextBox3.Size = new System.Drawing.Size(256, 39);
-            this.maskedTextBox3.TabIndex = 24;
-            this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label_c.AutoSize = true;
+            this.label_c.Location = new System.Drawing.Point(237, 368);
+            this.label_c.Name = "label_c";
+            this.label_c.Size = new System.Drawing.Size(63, 21);
+            this.label_c.TabIndex = 28;
+            this.label_c.Text = "Label:c";
             // 
-            // maskedTextBox2
+            // label_b
             // 
-            this.maskedTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox2.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskedTextBox2.Location = new System.Drawing.Point(237, 392);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PromptChar = ' ';
-            this.maskedTextBox2.Size = new System.Drawing.Size(256, 39);
-            this.maskedTextBox2.TabIndex = 23;
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label_b.AutoSize = true;
+            this.label_b.Location = new System.Drawing.Point(237, 302);
+            this.label_b.Name = "label_b";
+            this.label_b.Size = new System.Drawing.Size(65, 21);
+            this.label_b.TabIndex = 27;
+            this.label_b.Text = "Label:b";
+            // 
+            // label_a
+            // 
+            this.label_a.AutoSize = true;
+            this.label_a.Location = new System.Drawing.Point(237, 236);
+            this.label_a.Name = "label_a";
+            this.label_a.Size = new System.Drawing.Size(64, 21);
+            this.label_a.TabIndex = 26;
+            this.label_a.Text = "Label:a";
+            // 
+            // panel_hızyolzaman
+            // 
+            this.panel_hızyolzaman.Controls.Add(this.button_hizhesap);
+            this.panel_hızyolzaman.Controls.Add(this.button_zamanhesap);
+            this.panel_hızyolzaman.Controls.Add(this.button_yolhesap);
+            this.panel_hızyolzaman.Location = new System.Drawing.Point(236, 128);
+            this.panel_hızyolzaman.Name = "panel_hızyolzaman";
+            this.panel_hızyolzaman.Size = new System.Drawing.Size(256, 102);
+            this.panel_hızyolzaman.TabIndex = 25;
+            // 
+            // button_hizhesap
+            // 
+            this.button_hizhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_hizhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_hizhesap.ForeColor = System.Drawing.Color.White;
+            this.button_hizhesap.Location = new System.Drawing.Point(0, 34);
+            this.button_hizhesap.Name = "button_hizhesap";
+            this.button_hizhesap.Size = new System.Drawing.Size(256, 34);
+            this.button_hizhesap.TabIndex = 22;
+            this.button_hizhesap.TabStop = false;
+            this.button_hizhesap.Text = "Hız Hesapla";
+            this.button_hizhesap.UseVisualStyleBackColor = true;
+            this.button_hizhesap.Click += new System.EventHandler(this.button_hizhesap_Click);
+            // 
+            // button_zamanhesap
+            // 
+            this.button_zamanhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_zamanhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_zamanhesap.ForeColor = System.Drawing.Color.White;
+            this.button_zamanhesap.Location = new System.Drawing.Point(0, 68);
+            this.button_zamanhesap.Name = "button_zamanhesap";
+            this.button_zamanhesap.Size = new System.Drawing.Size(256, 34);
+            this.button_zamanhesap.TabIndex = 21;
+            this.button_zamanhesap.TabStop = false;
+            this.button_zamanhesap.Text = "Zaman Hesapla";
+            this.button_zamanhesap.UseVisualStyleBackColor = true;
+            this.button_zamanhesap.Click += new System.EventHandler(this.button_zamanhesap_Click);
+            // 
+            // button_yolhesap
+            // 
+            this.button_yolhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_yolhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_yolhesap.ForeColor = System.Drawing.Color.White;
+            this.button_yolhesap.Location = new System.Drawing.Point(0, 0);
+            this.button_yolhesap.Name = "button_yolhesap";
+            this.button_yolhesap.Size = new System.Drawing.Size(256, 34);
+            this.button_yolhesap.TabIndex = 20;
+            this.button_yolhesap.TabStop = false;
+            this.button_yolhesap.Text = "Yol Hesapla";
+            this.button_yolhesap.UseVisualStyleBackColor = true;
+            this.button_yolhesap.Click += new System.EventHandler(this.button_yolhesap_Click);
+            // 
+            // maskedTextBox_b
+            // 
+            this.maskedTextBox_b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.maskedTextBox_b.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox_b.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox_b.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBox_b.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.maskedTextBox_b.Location = new System.Drawing.Point(237, 326);
+            this.maskedTextBox_b.Name = "maskedTextBox_b";
+            this.maskedTextBox_b.PromptChar = ' ';
+            this.maskedTextBox_b.Size = new System.Drawing.Size(256, 39);
+            this.maskedTextBox_b.TabIndex = 2;
+            this.maskedTextBox_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // maskedTextBox_c
+            // 
+            this.maskedTextBox_c.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.maskedTextBox_c.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox_c.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox_c.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBox_c.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.maskedTextBox_c.Location = new System.Drawing.Point(237, 392);
+            this.maskedTextBox_c.Name = "maskedTextBox_c";
+            this.maskedTextBox_c.PromptChar = ' ';
+            this.maskedTextBox_c.Size = new System.Drawing.Size(256, 39);
+            this.maskedTextBox_c.TabIndex = 3;
+            this.maskedTextBox_c.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel_sekiller
             // 
@@ -673,6 +761,90 @@
             this.panel_sekiller.Name = "panel_sekiller";
             this.panel_sekiller.Size = new System.Drawing.Size(256, 102);
             this.panel_sekiller.TabIndex = 22;
+            // 
+            // button_karecevre
+            // 
+            this.button_karecevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_karecevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_karecevre.ForeColor = System.Drawing.Color.White;
+            this.button_karecevre.Location = new System.Drawing.Point(128, 68);
+            this.button_karecevre.Name = "button_karecevre";
+            this.button_karecevre.Size = new System.Drawing.Size(128, 34);
+            this.button_karecevre.TabIndex = 25;
+            this.button_karecevre.TabStop = false;
+            this.button_karecevre.Text = "Kare Çevre";
+            this.button_karecevre.UseVisualStyleBackColor = true;
+            this.button_karecevre.Click += new System.EventHandler(this.button_karecevre_Click);
+            // 
+            // button_karealan
+            // 
+            this.button_karealan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_karealan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_karealan.ForeColor = System.Drawing.Color.White;
+            this.button_karealan.Location = new System.Drawing.Point(0, 68);
+            this.button_karealan.Name = "button_karealan";
+            this.button_karealan.Size = new System.Drawing.Size(128, 34);
+            this.button_karealan.TabIndex = 24;
+            this.button_karealan.TabStop = false;
+            this.button_karealan.Text = "Kare Alan";
+            this.button_karealan.UseVisualStyleBackColor = true;
+            this.button_karealan.Click += new System.EventHandler(this.button_karealan_Click);
+            // 
+            // button_dikdortgencevre
+            // 
+            this.button_dikdortgencevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dikdortgencevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_dikdortgencevre.ForeColor = System.Drawing.Color.White;
+            this.button_dikdortgencevre.Location = new System.Drawing.Point(128, 34);
+            this.button_dikdortgencevre.Name = "button_dikdortgencevre";
+            this.button_dikdortgencevre.Size = new System.Drawing.Size(128, 34);
+            this.button_dikdortgencevre.TabIndex = 23;
+            this.button_dikdortgencevre.TabStop = false;
+            this.button_dikdortgencevre.Text = "Dikdörtgen Ç.";
+            this.button_dikdortgencevre.UseVisualStyleBackColor = true;
+            this.button_dikdortgencevre.Click += new System.EventHandler(this.button_dikdortgencevre_Click);
+            // 
+            // button_dikdortgenalan
+            // 
+            this.button_dikdortgenalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dikdortgenalan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_dikdortgenalan.ForeColor = System.Drawing.Color.White;
+            this.button_dikdortgenalan.Location = new System.Drawing.Point(0, 34);
+            this.button_dikdortgenalan.Name = "button_dikdortgenalan";
+            this.button_dikdortgenalan.Size = new System.Drawing.Size(128, 34);
+            this.button_dikdortgenalan.TabIndex = 22;
+            this.button_dikdortgenalan.TabStop = false;
+            this.button_dikdortgenalan.Text = "Dikdörtgen A.";
+            this.button_dikdortgenalan.UseVisualStyleBackColor = true;
+            this.button_dikdortgenalan.Click += new System.EventHandler(this.button_dikdortgenalan_Click);
+            // 
+            // button_dairecevre
+            // 
+            this.button_dairecevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dairecevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_dairecevre.ForeColor = System.Drawing.Color.White;
+            this.button_dairecevre.Location = new System.Drawing.Point(128, 0);
+            this.button_dairecevre.Name = "button_dairecevre";
+            this.button_dairecevre.Size = new System.Drawing.Size(128, 34);
+            this.button_dairecevre.TabIndex = 21;
+            this.button_dairecevre.TabStop = false;
+            this.button_dairecevre.Text = "Daire Çevre";
+            this.button_dairecevre.UseVisualStyleBackColor = true;
+            this.button_dairecevre.Click += new System.EventHandler(this.button_dairecevre_Click);
+            // 
+            // button_dairealan
+            // 
+            this.button_dairealan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_dairealan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_dairealan.ForeColor = System.Drawing.Color.White;
+            this.button_dairealan.Location = new System.Drawing.Point(0, 0);
+            this.button_dairealan.Name = "button_dairealan";
+            this.button_dairealan.Size = new System.Drawing.Size(128, 34);
+            this.button_dairealan.TabIndex = 20;
+            this.button_dairealan.TabStop = false;
+            this.button_dairealan.Text = "Daire Alan";
+            this.button_dairealan.UseVisualStyleBackColor = true;
+            this.button_dairealan.Click += new System.EventHandler(this.button_dairealan_Click);
             // 
             // panel_number_2
             // 
@@ -767,7 +939,9 @@
             this.button_2_number_equals.Size = new System.Drawing.Size(50, 50);
             this.button_2_number_equals.TabIndex = 7;
             this.button_2_number_equals.TabStop = false;
+            this.button_2_number_equals.Text = "L";
             this.button_2_number_equals.UseVisualStyleBackColor = false;
+            this.button_2_number_equals.Click += new System.EventHandler(this.button_2_number_equals_Click);
             // 
             // button_2_nine
             // 
@@ -912,19 +1086,19 @@
             this.button_2_number_one.Text = "1";
             this.button_2_number_one.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // maskedTextBox_a
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskedTextBox1.Location = new System.Drawing.Point(237, 260);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = ' ';
-            this.maskedTextBox1.Size = new System.Drawing.Size(256, 39);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBox_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.maskedTextBox_a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox_a.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.maskedTextBox_a.ForeColor = System.Drawing.Color.White;
+            this.maskedTextBox_a.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.maskedTextBox_a.Location = new System.Drawing.Point(237, 260);
+            this.maskedTextBox_a.Name = "maskedTextBox_a";
+            this.maskedTextBox_a.PromptChar = ' ';
+            this.maskedTextBox_a.Size = new System.Drawing.Size(256, 39);
+            this.maskedTextBox_a.TabIndex = 1;
+            this.maskedTextBox_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox_farkli_islmeler
             // 
@@ -960,169 +1134,6 @@
             this.listBox_Listececmisi.Size = new System.Drawing.Size(492, 518);
             this.listBox_Listececmisi.TabIndex = 5;
             // 
-            // button_dairealan
-            // 
-            this.button_dairealan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_dairealan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_dairealan.ForeColor = System.Drawing.Color.White;
-            this.button_dairealan.Location = new System.Drawing.Point(0, 0);
-            this.button_dairealan.Name = "button_dairealan";
-            this.button_dairealan.Size = new System.Drawing.Size(128, 34);
-            this.button_dairealan.TabIndex = 20;
-            this.button_dairealan.TabStop = false;
-            this.button_dairealan.Text = "Daire Alan";
-            this.button_dairealan.UseVisualStyleBackColor = true;
-            // 
-            // button_dairecevre
-            // 
-            this.button_dairecevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_dairecevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_dairecevre.ForeColor = System.Drawing.Color.White;
-            this.button_dairecevre.Location = new System.Drawing.Point(128, 0);
-            this.button_dairecevre.Name = "button_dairecevre";
-            this.button_dairecevre.Size = new System.Drawing.Size(128, 34);
-            this.button_dairecevre.TabIndex = 21;
-            this.button_dairecevre.TabStop = false;
-            this.button_dairecevre.Text = "Daire Çevre";
-            this.button_dairecevre.UseVisualStyleBackColor = true;
-            // 
-            // button_dikdortgenalan
-            // 
-            this.button_dikdortgenalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_dikdortgenalan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_dikdortgenalan.ForeColor = System.Drawing.Color.White;
-            this.button_dikdortgenalan.Location = new System.Drawing.Point(0, 34);
-            this.button_dikdortgenalan.Name = "button_dikdortgenalan";
-            this.button_dikdortgenalan.Size = new System.Drawing.Size(128, 34);
-            this.button_dikdortgenalan.TabIndex = 22;
-            this.button_dikdortgenalan.TabStop = false;
-            this.button_dikdortgenalan.Text = "Dikdörtgen A.";
-            this.button_dikdortgenalan.UseVisualStyleBackColor = true;
-            // 
-            // button_dikdortgencevre
-            // 
-            this.button_dikdortgencevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_dikdortgencevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_dikdortgencevre.ForeColor = System.Drawing.Color.White;
-            this.button_dikdortgencevre.Location = new System.Drawing.Point(128, 34);
-            this.button_dikdortgencevre.Name = "button_dikdortgencevre";
-            this.button_dikdortgencevre.Size = new System.Drawing.Size(128, 34);
-            this.button_dikdortgencevre.TabIndex = 23;
-            this.button_dikdortgencevre.TabStop = false;
-            this.button_dikdortgencevre.Text = "Dikdörtgen Ç.";
-            this.button_dikdortgencevre.UseVisualStyleBackColor = true;
-            // 
-            // button_karealan
-            // 
-            this.button_karealan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_karealan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_karealan.ForeColor = System.Drawing.Color.White;
-            this.button_karealan.Location = new System.Drawing.Point(0, 68);
-            this.button_karealan.Name = "button_karealan";
-            this.button_karealan.Size = new System.Drawing.Size(128, 34);
-            this.button_karealan.TabIndex = 24;
-            this.button_karealan.TabStop = false;
-            this.button_karealan.Text = "Kare Alan";
-            this.button_karealan.UseVisualStyleBackColor = true;
-            // 
-            // button_karecevre
-            // 
-            this.button_karecevre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_karecevre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_karecevre.ForeColor = System.Drawing.Color.White;
-            this.button_karecevre.Location = new System.Drawing.Point(128, 68);
-            this.button_karecevre.Name = "button_karecevre";
-            this.button_karecevre.Size = new System.Drawing.Size(128, 34);
-            this.button_karecevre.TabIndex = 25;
-            this.button_karecevre.TabStop = false;
-            this.button_karecevre.Text = "Kare Çevre";
-            this.button_karecevre.UseVisualStyleBackColor = true;
-            // 
-            // panel_hızyolzaman
-            // 
-            this.panel_hızyolzaman.Controls.Add(this.button_hizhesap);
-            this.panel_hızyolzaman.Controls.Add(this.button_zamanhesap);
-            this.panel_hızyolzaman.Controls.Add(this.button_yolhesap);
-            this.panel_hızyolzaman.Location = new System.Drawing.Point(236, 128);
-            this.panel_hızyolzaman.Name = "panel_hızyolzaman";
-            this.panel_hızyolzaman.Size = new System.Drawing.Size(256, 102);
-            this.panel_hızyolzaman.TabIndex = 25;
-            // 
-            // button_hizhesap
-            // 
-            this.button_hizhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_hizhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_hizhesap.ForeColor = System.Drawing.Color.White;
-            this.button_hizhesap.Location = new System.Drawing.Point(0, 34);
-            this.button_hizhesap.Name = "button_hizhesap";
-            this.button_hizhesap.Size = new System.Drawing.Size(256, 34);
-            this.button_hizhesap.TabIndex = 22;
-            this.button_hizhesap.TabStop = false;
-            this.button_hizhesap.Text = "Hız Hesapla";
-            this.button_hizhesap.UseVisualStyleBackColor = true;
-            // 
-            // button_zamanhesap
-            // 
-            this.button_zamanhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_zamanhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_zamanhesap.ForeColor = System.Drawing.Color.White;
-            this.button_zamanhesap.Location = new System.Drawing.Point(0, 68);
-            this.button_zamanhesap.Name = "button_zamanhesap";
-            this.button_zamanhesap.Size = new System.Drawing.Size(256, 34);
-            this.button_zamanhesap.TabIndex = 21;
-            this.button_zamanhesap.TabStop = false;
-            this.button_zamanhesap.Text = "Zaman Hesapla";
-            this.button_zamanhesap.UseVisualStyleBackColor = true;
-            // 
-            // button_yolhesap
-            // 
-            this.button_yolhesap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_yolhesap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_yolhesap.ForeColor = System.Drawing.Color.White;
-            this.button_yolhesap.Location = new System.Drawing.Point(0, 0);
-            this.button_yolhesap.Name = "button_yolhesap";
-            this.button_yolhesap.Size = new System.Drawing.Size(256, 34);
-            this.button_yolhesap.TabIndex = 20;
-            this.button_yolhesap.TabStop = false;
-            this.button_yolhesap.Text = "Yol Hesapla";
-            this.button_yolhesap.UseVisualStyleBackColor = true;
-            // 
-            // label_Sonuc
-            // 
-            this.label_Sonuc.AutoSize = true;
-            this.label_Sonuc.Location = new System.Drawing.Point(3, 113);
-            this.label_Sonuc.Name = "label_Sonuc";
-            this.label_Sonuc.Size = new System.Drawing.Size(61, 21);
-            this.label_Sonuc.TabIndex = 5;
-            this.label_Sonuc.Text = "Sonuç:";
-            // 
-            // label_a
-            // 
-            this.label_a.AutoSize = true;
-            this.label_a.Location = new System.Drawing.Point(237, 236);
-            this.label_a.Name = "label_a";
-            this.label_a.Size = new System.Drawing.Size(64, 21);
-            this.label_a.TabIndex = 26;
-            this.label_a.Text = "Label:a";
-            // 
-            // label_b
-            // 
-            this.label_b.AutoSize = true;
-            this.label_b.Location = new System.Drawing.Point(237, 302);
-            this.label_b.Name = "label_b";
-            this.label_b.Size = new System.Drawing.Size(65, 21);
-            this.label_b.TabIndex = 27;
-            this.label_b.Text = "Label:b";
-            // 
-            // label_c
-            // 
-            this.label_c.AutoSize = true;
-            this.label_c.Location = new System.Drawing.Point(237, 368);
-            this.label_c.Name = "label_c";
-            this.label_c.Size = new System.Drawing.Size(63, 21);
-            this.label_c.TabIndex = 28;
-            this.label_c.Text = "Label:c";
-            // 
             // anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1149,12 +1160,12 @@
             this.panel_dahaoncekiislemler.ResumeLayout(false);
             this.tabPage_farkli_islemler.ResumeLayout(false);
             this.tabPage_farkli_islemler.PerformLayout();
+            this.panel_hızyolzaman.ResumeLayout(false);
             this.panel_sekiller.ResumeLayout(false);
             this.panel_number_2.ResumeLayout(false);
             this.panel_number_2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_farkli_islmeler)).EndInit();
             this.tabPage_gecmis_islemler.ResumeLayout(false);
-            this.panel_hızyolzaman.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1214,12 +1225,12 @@
         private Button button_2_number_three;
         private Button button_2_number_eight;
         private Button button_2_number_one;
-        public MaskedTextBox maskedTextBox1;
+        public MaskedTextBox maskedTextBox_a;
         private TabPage tabPage_gecmis_islemler;
         private Panel panel_sekiller;
         private Panel panel2;
-        public MaskedTextBox maskedTextBox3;
-        public MaskedTextBox maskedTextBox2;
+        public MaskedTextBox maskedTextBox_b;
+        public MaskedTextBox maskedTextBox_c;
         private Button button_karecevre;
         private Button button_karealan;
         private Button button_dikdortgencevre;

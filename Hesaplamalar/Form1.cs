@@ -7,7 +7,8 @@
         public double sayi2;
         public double toplam;
         public bool sureklisilemkontrol = false;
-        int durum = 1;
+        int durum_4islem = 1;
+        int durum_farkli_islem = 1;
         string islemmodu = "+";
         //  DURUM değer : 1 değeri toplama, 2 değeri çıkarma, 3 değeri bölme, 4 değeri bölme, 5 değeri daha öneci işlemler, 6 değeri liste geçmişi.
         public anasayfa()
@@ -16,7 +17,7 @@
         }
         private void anasayfa_Load(object sender, EventArgs e)
         {
-            if (durum == 1)
+            if (durum_4islem == 1)
             {
                 radioButton_surekiislem.Checked = false;
                 radioButton_tekislem.Checked = true;
@@ -25,12 +26,18 @@
                 panel_dahaoncekiislemler.Visible = false;
                 panel_toplama.Visible = true;
             }
+            if(durum_farkli_islem == 1)
+            {
+                maskedTextBox_a.Text = "";
+                maskedTextBox_b.Text = "";
+                maskedTextBox_c.Text = "";
+            }
         }
 
         private void button_Toplama_Click(object sender, EventArgs e)
         {
             islemmodu = "+";
-            durum = 1;
+            durum_4islem = 1;
             panel_dahaoncekiislemler.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
@@ -39,7 +46,7 @@
         private void button_Cikarma_Click(object sender, EventArgs e)
         {
             islemmodu = "−";
-            durum = 2;
+            durum_4islem = 2;
             panel_dahaoncekiislemler.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Eksi-isareti.png");
@@ -47,7 +54,7 @@
         private void button2_Bolme_Click(object sender, EventArgs e)
         {
             islemmodu = "÷";
-            durum = 4;
+            durum_4islem = 4;
             panel_dahaoncekiislemler.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Bolme-islemi.png");
@@ -55,20 +62,20 @@
         private void button_Carpma_Click(object sender, EventArgs e)
         {
             islemmodu = "×";
-            durum = 3;
+            durum_4islem = 3;
             panel_dahaoncekiislemler.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\carpma-isareti.png");
         }
         private void button_Daha_onceki_islemler_Click(object sender, EventArgs e)
         {
-            durum = 5;
+            durum_4islem = 5;
             panel_dahaoncekiislemler.Visible = true;
             panel_toplama.Visible = false;
         }
 
         // Hesaplama ve sonuç işlemleri
-        public void hesapla()   
+        public void hesapla_4islem()   
         {
             sayi1 = Convert.ToDouble(maskedTextBox_Sayi1.Text);
             sayi2 = Convert.ToDouble(maskedTextBox_Sayi2.Text);
@@ -79,25 +86,25 @@
                 {
                     maskedTextBox_Sayi1.Enabled = false;
                     maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
-                    if (durum == 1)
+                    if (durum_4islem == 1)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Toplama(toplam, sayi2));
                         maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 2)
+                    if (durum_4islem == 2)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Cikartma(toplam, sayi2));
                         maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 3)
+                    if (durum_4islem == 3)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Carpma(toplam, sayi2));
                         maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 4)
+                    if (durum_4islem == 4)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Bolme(toplam, sayi2)) + " Kalan: " + hsp.kalanbolme(toplam, sayi2);
                         maskedTextBox_Sayi1.Text = Convert.ToString(toplam);
@@ -107,22 +114,22 @@
                 if (sureklisilemkontrol == false)
                 {
                     maskedTextBox_Sayi1.Enabled = true;
-                    if (durum == 1)
+                    if (durum_4islem == 1)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Toplama(sayi1, sayi2));
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 2)
+                    if (durum_4islem == 2)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Cikartma(sayi1, sayi2));
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 3)
+                    if (durum_4islem == 3)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Carpma(sayi1, sayi2));
                         sureklisilemkontrol = true;
                     }
-                    if (durum == 4)
+                    if (durum_4islem == 4)
                     {
                         label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Bolme(sayi1, sayi2)) + " Kalan: " + hsp.kalanbolme(sayi2, sayi2);
                         sureklisilemkontrol = true;
@@ -132,22 +139,22 @@
             if (radioButton_tekislem.Checked == true)
             {
                 maskedTextBox_Sayi1.Enabled = true;
-                if (durum == 1)
+                if (durum_4islem == 1)
                 {
                     label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Toplama(sayi1, sayi2));
                     sureklisilemkontrol = true;
                 }
-                if (durum == 2)
+                if (durum_4islem == 2)
                 {
                     label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Cikartma(sayi1, sayi2));
                     sureklisilemkontrol = true;
                 }
-                if (durum == 3)
+                if (durum_4islem == 3)
                 {
                     label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Carpma(sayi1, sayi2));
                     sureklisilemkontrol = true;
                 }
-                if (durum == 4)
+                if (durum_4islem == 4)
                 {
                     label_Sonuc.Text = "Sonuç: " + (toplam = hsp.Bolme(sayi1, sayi2)) + " Kalan: " + hsp.kalanbolme(sayi2, sayi2);
                     sureklisilemkontrol = true;
@@ -166,7 +173,7 @@
                 }
                 else
                 {
-                    hesapla();
+                    hesapla_4islem();
                 }
             }
         }
@@ -178,7 +185,7 @@
             }
             else
             {
-                hesapla();
+                hesapla_4islem();
             }
         }
 
@@ -236,7 +243,7 @@
         private void button_geri_don_Click(object sender, EventArgs e)
         {
             islemmodu = "+";
-            durum = 1;
+            durum_4islem = 1;
             panel_dahaoncekiislemler.Visible = false;
             panel_toplama.Visible = true;
             pictureBox_sembol.BackgroundImage = new Bitmap(@"A:\bilgisiyarim\Masaustu\Visual-studio-projeleri\staj-zamaninda-yaptigim-dosyalar\Hesaplamalar\Hesaplamalar\Resources\Toplama-isareti.png");
@@ -426,6 +433,66 @@
                     maskedTextBox_Sayi2.Text = maskedTextBox_Sayi2.Text + ",";
                 }
             }
+        }
+
+        //Farkı işlemler alanı __________________________________________________________________________
+
+        private void button_dairealan_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 1;
+        }
+
+        private void button_dairecevre_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 2;
+        }
+
+        private void button_dikdortgenalan_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 3;
+        }
+
+        private void button_dikdortgencevre_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 4;
+        }
+
+        private void button_karealan_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 5;
+        }
+
+        private void button_karecevre_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 6;
+        }
+
+        private void button_yolhesap_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 7;
+        }
+
+        private void button_hizhesap_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem =8;
+        }
+
+        private void button_zamanhesap_Click(object sender, EventArgs e)
+        {
+            durum_farkli_islem = 9;
+        }
+
+        private void hesapla_farkli()
+        {
+            if(durum_farkli_islem == 1)
+            {
+                label_a.Text = "Dairenin Yarı Çapı Giriniz:";
+            }
+        }
+
+        private void button_2_number_equals_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
