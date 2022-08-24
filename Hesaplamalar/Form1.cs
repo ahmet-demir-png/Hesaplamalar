@@ -28,9 +28,16 @@
             }
             if(durum_farkli_islem == 1)
             {
+                label_a.Text = "Dairenin (r)Yarı Çapını Giriniz:";
+                label_b.Text = "Dairenin Alanı: ";
                 maskedTextBox_a.Text = "";
                 maskedTextBox_b.Text = "";
-                maskedTextBox_c.Text = "";
+                //Görünürlük
+                label_a.Visible = true;
+                maskedTextBox_a.Visible = true;
+                label_b.Visible = true;
+                maskedTextBox_b.Visible = false;
+                label_c.Visible = false;
             }
         }
 
@@ -440,53 +447,122 @@
         private void button_dairealan_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 1;
+            //Görünürlük
+            label_a.Text = "Dairenin (r)Yarı Çapını Giriniz:";
+            label_b.Text = "Dairenin Alanı: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = false;
+            label_c.Visible = false;
         }
-
         private void button_dairecevre_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 2;
+            //Görünürlük
+            label_a.Text = "Dairenin Yarı Çapını Giriniz:";
+            label_b.Text = "Dairenin Çevresi: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = false;
+            label_c.Visible = false;
         }
-
         private void button_dikdortgenalan_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 3;
+            //Görünürlük
+            label_a.Text = "Dikdörtgenin a kenarını giriniz:";
+            label_b.Text = "Dikdörtgenin b kenarını giriniz:";
+            label_c.Text = "Dikdörtgenin Alanı: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = true;
+            label_c.Visible = true;
         }
-
         private void button_dikdortgencevre_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 4;
+            //Görünürlük
+            label_a.Text = "Dikdörtgenin a Kenarını Giriniz:";
+            label_b.Text = "Dikdörgenin b Kenarını Giriniz:";
+            label_c.Text = "Dikdörtgenin Çevresi: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = false;
+            label_c.Visible = false;
         }
-
         private void button_karealan_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 5;
-        }
+            //Görünürlük
 
+            label_a.Text = "Karenin a Kenarını Giriniz:";
+            label_c.Text = "Karenin Alan: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = false;
+            label_c.Visible = false;
+        }
         private void button_karecevre_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 6;
+            //Görünürlük
+            label_a.Text = "Karenin a Kenarını Giriniz:";
+            label_c.Text = "Karenin Çevre ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = false;
+            label_c.Visible = false;
         }
-
         private void button_yolhesap_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 7;
+            //Görünürlük
+            label_a.Text = "Hızı Giriniz:";
+            label_b.Text = "Zamanı Giriniz";
+            label_c.Text = "Yol uzunluğu: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = true;
+            label_c.Visible = true;
         }
-
         private void button_hizhesap_Click(object sender, EventArgs e)
         {
             durum_farkli_islem =8;
+            //Görünürlük
+            label_a.Text = "Yolu Giriniz:";
+            label_b.Text = "Zamanı Giriniz";
+            label_c.Text = "Hız: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = true;
+            label_c.Visible = true;
         }
-
         private void button_zamanhesap_Click(object sender, EventArgs e)
         {
             durum_farkli_islem = 9;
+            //Görünürlük
+            label_a.Text = "Hızı Giriniz:";
+            label_b.Text = "Yolu Giriniz";
+            label_c.Text = "Zaman: ";
+            label_a.Visible = true;
+            maskedTextBox_a.Visible = true;
+            label_b.Visible = true;
+            maskedTextBox_b.Visible = true;
+            label_c.Visible = true;
         }
-
+        //hesap işlem
         private void hesapla_farkli()
         {
             double sayi1 = Convert.ToDouble(maskedTextBox_a.Text);
             double sayi2 = Convert.ToDouble(maskedTextBox_b.Text);
-            double sayi3 = Convert.ToDouble(maskedTextBox_c.Text);
             if(durum_farkli_islem == 1)
             {
                 label_a.Text = "Dairenin (r)Yarı Çapını Giriniz:";
@@ -523,8 +599,8 @@
             if (durum_farkli_islem == 6)
             {
                 label_a.Text = "Karenin a Kenarını Giriniz:";
-                label_c.Text = "Karenin Çevre " + hsp.karecevre(sayi1);
-                listBox_Listececmisi.Items.Add("Karenin Çevre " + hsp.karecevre(sayi1));
+                label_c.Text = "Karenin Çevre: " + hsp.karecevre(sayi1);
+                listBox_Listececmisi.Items.Add("Karenin Çevre: " + hsp.karecevre(sayi1));
             }
             if(durum_farkli_islem == 7)
             {
@@ -537,21 +613,230 @@
             {
                 label_a.Text = "Yolu Giriniz:";
                 label_b.Text = "Zamanı Giriniz";
-                label_c.Text = "Hız:" + hsp.hizhesaplama(sayi1, sayi2);
-                listBox_Listececmisi.Items.Add("Hız:" + hsp.hizhesaplama(sayi1, sayi2));
+                label_c.Text = "Hız: " + hsp.hizhesaplama(sayi1, sayi2);
+                listBox_Listececmisi.Items.Add("Hız: " + hsp.hizhesaplama(sayi1, sayi2));
             }
             if(durum_farkli_islem == 9)
             {
                 label_a.Text = "Hızı Giriniz:";
-                label_b.Text = "Hızı Giriniz";
+                label_b.Text = "Yolu Giriniz";
                 label_c.Text = "Zaman: " + hsp.zamanhesaplama(sayi1, sayi2);
                 listBox_Listececmisi.Items.Add("Zaman: " + hsp.zamanhesaplama(sayi1, sayi2));
             }
         }
-
         private void button_2_number_equals_Click(object sender, EventArgs e)
         {
             hesapla_farkli();
         }
+
+        //
+        private void maskedTextBox_a_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+        }
+        private void maskedTextBox_b_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+
+        }
+
+        private void maskedTextBox_a_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void maskedTextBox_b_Click(object sender, EventArgs e)
+        {
+
+        }
+        bool odaktext2_1 = true;
+        bool odaktext2_2 = false;
+        private void button_2_number_minus_sign_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                if (maskedTextBox_a.Text.Contains("-") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_a.Text = maskedTextBox_a.Text + "-";
+                }
+            }
+            if (odaktext2_2 == true)
+            {
+                if (maskedTextBox_b.Text.Contains("-") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_b.Text = "-" + maskedTextBox_b.Text;
+                }
+            }
+        }
+        private void button_2_number_comma_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                if (maskedTextBox_a.Text.Contains(",") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_a.Text = maskedTextBox_a.Text + ",";
+                }
+            }
+            if (odaktext2_2 == true)
+            {
+                if (maskedTextBox_b.Text.Contains(",") == true)
+                {
+                    MessageBox.Show("Zaten bir tane kullanmışsınız");
+                }
+                else
+                {
+                    maskedTextBox_b.Text = "," + maskedTextBox_b.Text;
+                }
+            }
+        }
+        private void button_2_onceki_islemler_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_2_number_ce_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_2_number_c_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void button_2_number_zero_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "0";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "0";
+            }
+        }
+
+        private void button_2_number_one_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "1";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "1";
+            }
+        }
+
+        private void button_2_number_two_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "2";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "2";
+            }
+        }
+
+        private void button_2_number_three_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "3";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "3";
+            }
+        }
+
+        private void button_2_number_four_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "4";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "4";
+            }
+        }
+
+        private void button_2_number_five_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "5";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "5";
+            }
+        }
+
+        private void button_2_number_six_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "6";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "6";
+            }
+        }
+
+        private void button_2_number_seven_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "7";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "7";
+            }
+        }
+
+        private void button_2_number_eight_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "8";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "8";
+            }
+        }
+
+        private void button_2_nine_Click(object sender, EventArgs e)
+        {
+            if (odaktext2_1 == true)
+            {
+                maskedTextBox_a.Text = maskedTextBox_a.Text + "9";
+            }
+            if (odaktext2_2 == true)
+            {
+                maskedTextBox_b.Text = maskedTextBox_b.Text + "9";
+            }
+        }
+        //Textbox kontrolu 
+
     }
 }

@@ -73,7 +73,6 @@
             this.button_zamanhesap = new System.Windows.Forms.Button();
             this.button_yolhesap = new System.Windows.Forms.Button();
             this.maskedTextBox_b = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox_c = new System.Windows.Forms.MaskedTextBox();
             this.panel_sekiller = new System.Windows.Forms.Panel();
             this.button_karecevre = new System.Windows.Forms.Button();
             this.button_karealan = new System.Windows.Forms.Button();
@@ -629,7 +628,6 @@
             this.tabPage_farkli_islemler.Controls.Add(this.label_a);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_hızyolzaman);
             this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_b);
-            this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_c);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_sekiller);
             this.tabPage_farkli_islemler.Controls.Add(this.panel_number_2);
             this.tabPage_farkli_islemler.Controls.Add(this.maskedTextBox_a);
@@ -734,20 +732,8 @@
             this.maskedTextBox_b.Size = new System.Drawing.Size(256, 39);
             this.maskedTextBox_b.TabIndex = 2;
             this.maskedTextBox_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // maskedTextBox_c
-            // 
-            this.maskedTextBox_c.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.maskedTextBox_c.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox_c.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox_c.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox_c.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskedTextBox_c.Location = new System.Drawing.Point(237, 392);
-            this.maskedTextBox_c.Name = "maskedTextBox_c";
-            this.maskedTextBox_c.PromptChar = ' ';
-            this.maskedTextBox_c.Size = new System.Drawing.Size(256, 39);
-            this.maskedTextBox_c.TabIndex = 3;
-            this.maskedTextBox_c.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBox_b.Click += new System.EventHandler(this.maskedTextBox_b_Click);
+            this.maskedTextBox_b.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_b_KeyPress);
             // 
             // panel_sekiller
             // 
@@ -884,6 +870,7 @@
             this.button_2_onceki_islemler.TabIndex = 4;
             this.button_2_onceki_islemler.TabStop = false;
             this.button_2_onceki_islemler.UseVisualStyleBackColor = false;
+            this.button_2_onceki_islemler.Click += new System.EventHandler(this.button_2_onceki_islemler_Click);
             // 
             // button_2_number_c
             // 
@@ -898,6 +885,7 @@
             this.button_2_number_c.TabIndex = 20;
             this.button_2_number_c.TabStop = false;
             this.button_2_number_c.UseVisualStyleBackColor = true;
+            this.button_2_number_c.Click += new System.EventHandler(this.button_2_number_c_Click);
             // 
             // button_2_number_minus_sign
             // 
@@ -911,6 +899,7 @@
             this.button_2_number_minus_sign.TabStop = false;
             this.button_2_number_minus_sign.Text = "-";
             this.button_2_number_minus_sign.UseVisualStyleBackColor = true;
+            this.button_2_number_minus_sign.Click += new System.EventHandler(this.button_2_number_minus_sign_Click);
             // 
             // button_2_number_ce
             // 
@@ -925,6 +914,7 @@
             this.button_2_number_ce.TabIndex = 6;
             this.button_2_number_ce.TabStop = false;
             this.button_2_number_ce.UseVisualStyleBackColor = true;
+            this.button_2_number_ce.Click += new System.EventHandler(this.button_2_number_ce_Click);
             // 
             // button_2_number_equals
             // 
@@ -939,7 +929,6 @@
             this.button_2_number_equals.Size = new System.Drawing.Size(50, 50);
             this.button_2_number_equals.TabIndex = 7;
             this.button_2_number_equals.TabStop = false;
-            this.button_2_number_equals.Text = "L";
             this.button_2_number_equals.UseVisualStyleBackColor = false;
             this.button_2_number_equals.Click += new System.EventHandler(this.button_2_number_equals_Click);
             // 
@@ -955,6 +944,7 @@
             this.button_2_nine.TabStop = false;
             this.button_2_nine.Text = "9";
             this.button_2_nine.UseVisualStyleBackColor = true;
+            this.button_2_nine.Click += new System.EventHandler(this.button_2_nine_Click);
             // 
             // button_2_number_comma
             // 
@@ -968,6 +958,7 @@
             this.button_2_number_comma.TabStop = false;
             this.button_2_number_comma.Text = ",";
             this.button_2_number_comma.UseVisualStyleBackColor = true;
+            this.button_2_number_comma.Click += new System.EventHandler(this.button_2_number_comma_Click);
             // 
             // button_2_number_seven
             // 
@@ -981,6 +972,7 @@
             this.button_2_number_seven.TabStop = false;
             this.button_2_number_seven.Text = "7";
             this.button_2_number_seven.UseVisualStyleBackColor = true;
+            this.button_2_number_seven.Click += new System.EventHandler(this.button_2_number_seven_Click);
             // 
             // button_2_number_zero
             // 
@@ -994,6 +986,7 @@
             this.button_2_number_zero.TabStop = false;
             this.button_2_number_zero.Text = "0";
             this.button_2_number_zero.UseVisualStyleBackColor = true;
+            this.button_2_number_zero.Click += new System.EventHandler(this.button_2_number_zero_Click);
             // 
             // button_2_number_six
             // 
@@ -1007,6 +1000,7 @@
             this.button_2_number_six.TabStop = false;
             this.button_2_number_six.Text = "6";
             this.button_2_number_six.UseVisualStyleBackColor = true;
+            this.button_2_number_six.Click += new System.EventHandler(this.button_2_number_six_Click);
             // 
             // button_2_number_two
             // 
@@ -1033,6 +1027,7 @@
             this.button_2_number_four.TabStop = false;
             this.button_2_number_four.Text = "4";
             this.button_2_number_four.UseVisualStyleBackColor = true;
+            this.button_2_number_four.Click += new System.EventHandler(this.button_2_number_four_Click);
             // 
             // button_2_number_five
             // 
@@ -1046,6 +1041,7 @@
             this.button_2_number_five.TabStop = false;
             this.button_2_number_five.Text = "5";
             this.button_2_number_five.UseVisualStyleBackColor = true;
+            this.button_2_number_five.Click += new System.EventHandler(this.button_2_number_five_Click);
             // 
             // button_2_number_three
             // 
@@ -1059,6 +1055,7 @@
             this.button_2_number_three.TabStop = false;
             this.button_2_number_three.Text = "3";
             this.button_2_number_three.UseVisualStyleBackColor = true;
+            this.button_2_number_three.Click += new System.EventHandler(this.button_2_number_three_Click);
             // 
             // button_2_number_eight
             // 
@@ -1072,6 +1069,7 @@
             this.button_2_number_eight.TabStop = false;
             this.button_2_number_eight.Text = "8";
             this.button_2_number_eight.UseVisualStyleBackColor = true;
+            this.button_2_number_eight.Click += new System.EventHandler(this.button_2_number_eight_Click);
             // 
             // button_2_number_one
             // 
@@ -1085,6 +1083,7 @@
             this.button_2_number_one.TabStop = false;
             this.button_2_number_one.Text = "1";
             this.button_2_number_one.UseVisualStyleBackColor = true;
+            this.button_2_number_one.Click += new System.EventHandler(this.button_2_number_one_Click);
             // 
             // maskedTextBox_a
             // 
@@ -1099,6 +1098,8 @@
             this.maskedTextBox_a.Size = new System.Drawing.Size(256, 39);
             this.maskedTextBox_a.TabIndex = 1;
             this.maskedTextBox_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBox_a.Click += new System.EventHandler(this.maskedTextBox_a_Click);
+            this.maskedTextBox_a.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox_a_KeyPress);
             // 
             // pictureBox_farkli_islmeler
             // 
@@ -1230,7 +1231,6 @@
         private Panel panel_sekiller;
         private Panel panel2;
         public MaskedTextBox maskedTextBox_b;
-        public MaskedTextBox maskedTextBox_c;
         private Button button_karecevre;
         private Button button_karealan;
         private Button button_dikdortgencevre;
